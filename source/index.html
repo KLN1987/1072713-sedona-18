@@ -1,12 +1,140 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
 
-  </body>
+<body>
+
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img class="page-header__logo-image" src="img/logotype-mobile.jpg" width="102" height="83" alt="Город Седона">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="#">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo-video.html">Фото и видео</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Форма отзыва</a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
+          </li>
+        </ul>
+        <div class="page-header__intro">
+          <img class="page-header__intro-image" src="img/intro-index.png" width="281" height="214"
+            alt="Приветсвие!">
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main clas="page-main">
+    <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
+
+    <section class="advantages">
+      <div class="advantages__header">
+        <h2>СЕДОНА — небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      </div>
+      <ul class="advantages__list">
+        <li class="advantages__item advantages-basic">
+          <b class="advantages__title">НАСТОЯЩИЙ ГОРОДОК</b>
+          <p class="advantages__number">&ndash;№1&ndash;</p>
+          <p class="advantages__description">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+          <img class="advantages__image" width="520" height="260" alt="фото Седоны" src="img/photo-city@1x.jpg">
+        </li>
+        <li class="advantages__item advantages-basic">
+          <b class="advantages__title">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</b>
+          <p class="advantages__number">&ndash;№2&ndash;</p>
+          <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          <img class="advantages__image" width="520" height="260" alt="фото моста Дьявола"
+            src="img/photo-bridge@1x.jpg">
+        </li>
+        <li class="advantages__item">
+          <b class="advantages__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</b>
+          <p class="advantages__number">&ndash;№3&ndash;</p>
+          <p class="advantages__description">Все интересные места находятся очень близко</p>
+        </li>
+        <li class="advantages__item">
+          <b class="advantages__title">КРАСИВАЯ ДОРОГА</b>
+          <p class="advantages__number">&ndash;№4&ndash;</p>
+          <p class="advantages__description">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО!</p>
+        </li>
+        <li class="advantages__item">
+          <b class="advantages__title">МАЛО ТУРИСТОВ</b>
+          <p class="advantages__number">&ndash;№5&ndash;</p>
+          <p class="advantages__description">Большинство едет в гранд каньон и толпится там</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="services">
+      <h2 class="visually-hidden">Наши сервисы</h2>
+      <ul class="services__list">
+        <li class="services__item services__item-hotel">
+          <h3 class="services__title">Жилье</h3>
+          <p class="services__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+        </li>
+        <li class="services__item services__item-souvenir">
+          <h3 class="services__title">Сувениры</h3>
+          <p class="services__description">Не только китайского, но и местного производства!</p>
+        </li>
+        <li class="services__item services__item-food">
+          <h3 class="services__title">Еда</h3>
+          <p class="services__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="search-services">
+      <h3 class="search-services__title">Заинтересовались?</h3>
+      <p class="search-services__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
+        гостиниц в седоне</p>
+      <a href="#">Найти гостиницу</a>
+    </section>
+
+    <section class="map">
+      <a class="map__interactive" href="#">
+        <img class="map__interactive-image" alt="Место нахождение Седоны" width="320" height="350"
+          src="img/map-mobile.jpg">
+      </a>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__social social">
+        <b class="social__title">#VISITSEDONA</b>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="https://www.twitter.com/htmlacademy">Мы в Твитере</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy">Мы в Ютубе</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
 </html>
+<p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a
+    href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
