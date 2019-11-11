@@ -17,7 +17,7 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="#">Главная</a>
+            <a href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
             <a href="photo-video.html">Фото и видео</a>
@@ -29,51 +29,52 @@
             <a href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
           </li>
         </ul>
-        <div class="page-header__intro">
-          <img class="page-header__intro-image" src="img/intro-index.png" width="281" height="214" alt="Приветсвие!">
-          <img class="page-header__intro-background" src="img/back-mobile.jpg" width="768" height="389" alt="горы Седоны">
-          <h1>Фото и видео</h1>
-          <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-        </div>
       </div>
     </nav>
   </header>
 
-  <main clas="page-main gallery">
-      <section class="foto">
+  <main class="page-main gallery">
+
+      <section class="page-main__intro">
+          <img class="page-main__intro-image" src="img/intro-index.png" width="281" height="214" alt="Приветсвие!">
+          <h1 class="page-main__title heading-primary">Фото и видео</h1>
+          <p class="page-main__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      </section>
+
+      <div class="foto">
         <div class="foto__wrapper">
           <ul class="foto__list">
             <li class="foto__item">
               <img class="foto__image" width="280" height="280" alt="просторы" src="img/photo-1-mobile.jpg">
               <p class="foto__title">Неродные просторы</p>
               <p class="foto__author">Автор фото: Борис</p>
-              <button class="foto__like">Like</button>
+              <button type="button" class="foto__like">Like</button>
               <p class="foto__quantity-like">1350</p>
             </li>
             <li class="foto__item">
               <img class="foto__image" width="280" height="280" alt="растительность" src="img/photo-2-mobile.jpg">
               <p class="foto__title">Местная растительность</p>
               <p class="foto__author">Автор фото: Сергей</p>
-              <button class="foto__like">Like</button>
+              <button type="button" class="foto__like">Like</button>
               <p class="foto__quantity-like">143</p>
             </li>
             <li class="foto__item">
               <img class="foto__image" width="280" height="280" alt="растительность" src="img/photo-3-mobile.jpg">
               <p class="fotov__title">Дорога на север</p>
               <p class="foto__author">Автор фото: Петр</p>
-              <button class="foto__like">Like</button>
+              <button type="button" class="foto__like">Like</button>
               <p class="foto__quantity-like">96</p>
             </li>
             <li class="foto__item">
               <img class="foto__image" width="280" height="280" alt="мост Дьявола" src="img/photo-bridge@1x.jpg">
               <p class="foto__title">Мост Дьявола</p>
               <p class="foto__author">Автор фото: Антон</p>
-              <button class="foto__like" aria-label="Like"></button>
+              <button type="button" class="foto__like" aria-label="Like"></button>
               <p class="foto__quantity-like">254</p>
             </li>
           </ul>
         </div>
-      </section>
+      </div>
       <section class="video">
         <div class="video__wrapper">
           <div class="video__header">
@@ -84,36 +85,35 @@
           </video>
         </div>
       </section>
+      </main>
 
 
       <footer class="page-footer">
-        <div class="page-footer__wrapper">
-          <div class="page-footer__social social">
-            <b class="social__title">#VISITSEDONA</b>
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link social__link--twitter" href="https://www.twitter.com/htmlacademy"
-                  aria-lable="Седона в Твиттере"><span class="visually-hidden">Мы в
-                    Твитере</span></a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"
-                  aria-lable="Седона в Фейсбуке"><span class="visually-hidden">Мы в
-                    Фейсбуке</span></a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy"
-                  aria-lable="Седона в Ютубе"><span class="visually-hidden">Мы в Ютубе</span></a>
-              </li>
-            </ul>
+          <div class="page-footer__wrapper">
+            <div class="page-footer__social social">
+              <b class="social__title">#VISITSEDONA</b>
+              <ul class="social__list">
+                <li class="social__item">
+                  <a class="social__link social__link--twitter" href="https://www.twitter.com/htmlacademy"><span
+                      class="visually-hidden">Мы в
+                      Твитере</span></a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span
+                      class="visually-hidden">Мы в
+                      Фейсбуке</span></a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy"><span
+                      class="visually-hidden">Мы в Ютубе</span></a>
+                </li>
+              </ul>
+            </div>
+            <div class="page-footer__copyright copyright">
+              <p class="copyright__text">Разработано</p>
+              <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </div>
           </div>
-          <div class="page-footer__copyright copyright">
-            <p class="copyright__text">Разработано</p>
-            <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </div>
-        </div>
-      </footer>
-
+        </footer>
 </body>
-
 </html>
