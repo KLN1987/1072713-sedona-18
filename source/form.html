@@ -40,90 +40,88 @@
       </div>
       <div class="page-main__intro-body">
         <h1 class="page-main__title heading-primary">Оставьте свой отзыв</h1>
-        <p class="page-main__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
+        <p class="page-main__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных
           вами достопримечательностях
         </p>
       </div>
     </section>
     <section class="page-form">
-      <form action="https://echo.htmlacademy.ru" class="page-form__reviews" method="post">
-        <div class="page-form__section page-form__present">
-          <h2 class="page-form__header">Представьтесь:</h2>
-          <p class="page-form__information">
-            <label for="information-name">Имя<sup>*</sup>:</label>
-            <input type="text" name="name" class="page-form__name" id="information-name">
+      <form class="form page-form__reviews" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="page-form__section page-form__present">
+          <legend class="page-form__header">Представьтесь:</legend>
+          <p class="form__field-wrapper page-form__information">
+            <label class="form__label" for="name">Имя<sup>*</sup>:</label>
+            <input type="text" name="name" class="form__input page-form__name" id="name">
           </p>
-          <p class="page-form__information">
-            <label for="information-surname">Фамилия<sup>*</sup>:</label>
-            <input type="text" name="name" class="page-form__name" id="information-surname">
+          <p class="form__field-wrapper page-form__information">
+            <label class="form__label" for="surname">Фамилия<sup>*</sup>:</label>
+            <input type="text" name="name" class="form__input page-form__name" id="surname">
           </p>
-          <p class="page-form__information">
-            <label for="information-patronymic">Отчество:</label>
-            <input type="text" name="name" class="page-form__name" id="information-patronymic">
+          <p class="form__field-wrapper page-form__information">
+            <label class="form__label" for="patronymic">Отчество:</label>
+            <input type="text" name="name" class="form__input page-form__name" id="patronymic">
           </p>
-        </div>
-        <div class="page-form__section page-form__contacts">
-          <h2 class="page-form__header">Контактная информация:</h2>
-          <p class="page-form__information">
-            <label for="page-form__information--tel">Контактный телефон<sup>*</sup>:</label>
-            <input type="tel" name="tel" class="page-form__tel" id="page-form__information--tel"
+        </fieldset>
+        <fieldset class="page-form__section page-form__contacts">
+          <legend class="page-form__header">Контактная информация:</legend>
+          <p class="form__field-wrapper page-form__information">
+            <label class="form__label" for="tel">Контактный телефон<sup>*</sup>:</label>
+            <input type="tel" name="tel" class="form__input page-form__tel" id="tel"
               pattern="+7(***)***-**-**" placeholder="Введите телефон">
-            <button type="button" class="page-form__call" aria-label="Call"></button>
           </p>
-          <p class="page-form__information">
-            <label for="page-form__information--email">Электронная почта<sup>*</sup>:</label>
-            <input type="email" name="email" class="page-form__email" id="page-form__information--email"
+          <p class="form__field-wrapper page-form__information">
+            <label class="form__label" for="email">Электронная почта<sup>*</sup>:</label>
+            <input type="email" name="email" class="form__input page-form__email" id="email"
               placeholder="Введите e-mail">
-            <button type="button" class="page-form__send-mail" aria-label="Email"></button>
           </p>
-        </div>
-        <div class="page-form__section page-form__impressions">
-          <h2 class="page-form__header">Ваше общее впечатление:</h2>
-          <ul class="page-form__impressions-list">
-            <li class="page-form__impressions-item">
-              <input class="page-form__impressions-item-choice" type="radio" name="plus" id="plus--item-choice">
-              <label for="plus--item-choice">Скорее положительное</label>
+        </fieldset>
+        <fieldset class="page-form__section page-form__impressions">
+          <legend class="page-form__header">Ваше общее впечатление:</legend>
+          <ul class="radio page-form__impressions-list">
+            <li class="radio__item page-form__impressions-item">
+              <input class="radio__input form__input visually-hidden" type="radio" name="plus" id="plus-item">
+              <label class="radio__label form__label" for="plus-item">Скорее положительное</label>
             </li>
-            <li class="page-form__impressions-item">
-              <input class="page-form__impressions-item-choice" type="radio" name="minus" id="minus--item-choice">
-              <label for="minus--item-choice">Скорее отрицательное</label>
+            <li class="radio__item page-form__impressions-item">
+              <input class="radio__input form__input visually-hidden" type="radio" name="minus" id="minus-item">
+              <label  class="radio__label form__label" for="minus-item">Скорее отрицательное</label>
             </li>
-            <li class="page-form__impressions-item">
-              <input class="page-form__impressions-item-choice" type="radio" name="difficult"
-                id="difficult--item-choice">
-              <label for="difficult--item-choice">Затрудняюсь ответить</label>
-            </li>
-          </ul>
-        </div>
-        <div class="page-form__section page-form__place">
-          <h2 class="page-form__header">Ваше общее впечатление:</h2>
-          <ul class="page-form__place-list">
-            <li class="page-form__place-item">
-              <input class="page-form__place-item-choice" type="checkbox" name="bridge" id="bridge--item-choice">
-              <label for="bridge--item-choice">Мост Дьявола</label>
-            </li>
-            <li class="page-form__place-item">
-              <input class="page-form__place-item-choice" type="checkbox" name="mountain" id="mountain--item-choice">
-              <label for="mountain--item-choice">Гора-Колокол</label>
-            </li>
-            <li class="page-form__place-item">
-              <input class="page-form__place-item-choice" type="checkbox" name="park" id="park--item-choice">
-              <label for="park--item-choice">Слайд-парк</label>
-            </li>
-            <li class="page-form__place-item">
-              <input class="page-form__place-item-choice" type="checkbox" name="rock" id="rock--item-choice">
-              <label for="rock--item-choice">Красные скалы</label>
+            <li class="radio__item page-form__impressions-item">
+              <input class="radio__input form__input visually-hidden" type="radio" name="difficult"
+                id="difficult-item">
+              <label class="radio__label form__label" for="difficult-item">Затрудняюсь ответить</label>
             </li>
           </ul>
-        </div>
-        <div class="page-form__section page-form__emotions">
-          <h2 class="page-form__header">Опишите свои эмоции:</h2>
-          <p class="page-form__information">
-            <textarea name="text" class="page-form__information-textarea" rows="5"
+        </fieldset>
+        <fieldset class="page-form__section page-form__place">
+          <legend class="page-form__header">Ваше общее впечатление:</legend>
+          <ul class="page-form__place-list checkbox">
+            <li class="checkbox__item page-form__place-item">
+              <input class="checkbox__input form__input" type="checkbox" name="bridge" id="bridge-item">
+              <label class="checkbox__label form__label" for="bridge-item">Мост Дьявола</label>
+            </li>
+            <li class="checkbox__item page-form__place-item">
+              <input class="checkbox__input form__input " type="checkbox" name="mountain" id="mountain-item">
+              <label class="checkbox__label form__label" for="mountain-item">Гора-Колокол</label>
+            </li>
+            <li class="checkbox__item page-form__place-item">
+              <input class="checkbox__input form__input " type="checkbox" name="park" id="park-item">
+              <label class="checkbox__label form__label" for="park-item">Слайд-парк</label>
+            </li>
+            <li class="checkbox__item page-form__place-item">
+              <input class="checkbox__input form__input " type="checkbox" name="rock" id="rock-item">
+              <label class="checkbox__label form__label" for="rock-item">Красные скалы</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="page-form__section page-form__emotions">
+          <legend class="page-form__header">Опишите свои эмоции:</legend>
+          <p class="form__field-wrapper page-form__information">
+            <textarea name="text" class="form__textarea" rows="5"
               placeholder="Опишите подробно все свои восторги"></textarea>
           </p>
-        </div>
-        <button class="button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+        </fieldset>
+        <button class="button" type="submit">Отправить отзыв</button>
       </form>
     </section>
   </main>
