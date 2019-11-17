@@ -45,78 +45,75 @@
         </p>
       </div>
     </section>
-    <section class="page-form">
-      <form class="form page-form__reviews" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="page-form__section page-form__present">
-          <legend class="page-form__header">Представьтесь:</legend>
-          <p class="form__field-wrapper page-form__information">
+    <section class="reviews">
+      <form class="form reviews__form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="form__fieldset reviews__present">
+          <legend class="form__legend">Представьтесь:</legend>
+          <p class="form__field-wrapper">
             <label class="form__label" for="name">Имя<sup>*</sup>:</label>
-            <input type="text" name="name" class="form__input page-form__name" id="name">
+            <input class="form__input" type="text" name="name" id="name">
           </p>
-          <p class="form__field-wrapper page-form__information">
+          <p class="form__field-wrapper">
             <label class="form__label" for="surname">Фамилия<sup>*</sup>:</label>
-            <input type="text" name="name" class="form__input page-form__name" id="surname">
+            <input class="form__input" type="text" name="surname" id="surname">
           </p>
-          <p class="form__field-wrapper page-form__information">
+          <p class="form__field-wrapper">
             <label class="form__label" for="patronymic">Отчество:</label>
-            <input type="text" name="name" class="form__input page-form__name" id="patronymic">
+            <input class="form__input" type="text" name="patronymic" id="patronymic">
           </p>
         </fieldset>
-        <fieldset class="page-form__section page-form__contacts">
-          <legend class="page-form__header">Контактная информация:</legend>
-          <p class="form__field-wrapper page-form__information">
+        <fieldset class="form__fieldset reviews__present">
+          <legend class="form__legend">Контактная информация:</legend>
+          <p class="form__field-wrapper">
             <label class="form__label" for="tel">Контактный телефон<sup>*</sup>:</label>
-            <input type="tel" name="tel" class="form__input page-form__tel" id="tel"
-              pattern="+7(***)***-**-**" placeholder="Введите телефон">
+            <input class="form__input" type="tel" name="tel" id="tel" placeholder="Введите телефон">
           </p>
-          <p class="form__field-wrapper page-form__information">
+          <p class="form__field-wrapper">
             <label class="form__label" for="email">Электронная почта<sup>*</sup>:</label>
-            <input type="email" name="email" class="form__input page-form__email" id="email"
-              placeholder="Введите e-mail">
+            <input class="form__input" type="email" name="email" id="email" placeholder="Введите e-mail">
           </p>
         </fieldset>
-        <fieldset class="page-form__section page-form__impressions">
-          <legend class="page-form__header">Ваше общее впечатление:</legend>
-          <ul class="radio page-form__impressions-list">
-            <li class="radio__item page-form__impressions-item">
-              <input class="radio__input form__input visually-hidden" type="radio" name="plus" id="plus-item">
+        <fieldset class="form__fieldset reviews__present">
+          <legend class="form__legend">Ваше общее впечатление:</legend>
+          <ul class="form__list">
+            <li class="form__radio radio">
+              <input class="radio__input visually-hidden" type="radio" name="plus" id="plus-item">
               <label class="radio__label form__label" for="plus-item">Скорее положительное</label>
             </li>
-            <li class="radio__item page-form__impressions-item">
-              <input class="radio__input form__input visually-hidden" type="radio" name="minus" id="minus-item">
-              <label  class="radio__label form__label" for="minus-item">Скорее отрицательное</label>
+            <li class="form__radio radio">
+              <input class="radio__input visually-hidden" type="radio" name="minus" id="minus-item">
+              <label class="radio__label form__label" for="minus-item">Скорее отрицательное</label>
             </li>
-            <li class="radio__item page-form__impressions-item">
-              <input class="radio__input form__input visually-hidden" type="radio" name="difficult"
-                id="difficult-item">
+            <li class="form__radio radio">
+              <input class="radio__input visually-hidden" type="radio" name="difficult" id="difficult-item">
               <label class="radio__label form__label" for="difficult-item">Затрудняюсь ответить</label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="page-form__section page-form__place">
-          <legend class="page-form__header">Ваше общее впечатление:</legend>
-          <ul class="page-form__place-list checkbox">
-            <li class="checkbox__item page-form__place-item">
-              <input class="checkbox__input form__input" type="checkbox" name="bridge" id="bridge-item">
+        <fieldset class="form__fieldset reviews__present">
+          <legend class="form__legend">Ваше общее впечатление:</legend>
+          <ul class="form__list">
+            <li class="form__checkbox checkbox">
+              <input class="checkbox__input visually-hidden" type="checkbox" name="bridge" id="bridge-item">
               <label class="checkbox__label form__label" for="bridge-item">Мост Дьявола</label>
             </li>
-            <li class="checkbox__item page-form__place-item">
-              <input class="checkbox__input form__input " type="checkbox" name="mountain" id="mountain-item">
+            <li class="form__checkbox checkbox">
+              <input class="checkbox__input visually-hidden" type="checkbox" name="mountain" id="mountain-item">
               <label class="checkbox__label form__label" for="mountain-item">Гора-Колокол</label>
             </li>
-            <li class="checkbox__item page-form__place-item">
-              <input class="checkbox__input form__input " type="checkbox" name="park" id="park-item">
+            <li class="form__checkbox checkbox">
+              <input class="checkbox__input visually-hidden" type="checkbox" name="park" id="park-item">
               <label class="checkbox__label form__label" for="park-item">Слайд-парк</label>
             </li>
-            <li class="checkbox__item page-form__place-item">
-              <input class="checkbox__input form__input " type="checkbox" name="rock" id="rock-item">
+            <li class="form__checkbox checkbox">
+              <input class="checkbox__input visually-hidden" type="checkbox" name="rock" id="rock-item">
               <label class="checkbox__label form__label" for="rock-item">Красные скалы</label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="page-form__section page-form__emotions">
-          <legend class="page-form__header">Опишите свои эмоции:</legend>
-          <p class="form__field-wrapper page-form__information">
+        <fieldset class="form__fieldset reviews__present">
+          <legend class="form__legend">Опишите свои эмоции:</legend>
+          <p class="form__field-wrapper">
             <textarea name="text" class="form__textarea" rows="5"
               placeholder="Опишите подробно все свои восторги"></textarea>
           </p>
