@@ -1,3 +1,62 @@
 @bc-main: #81b3d2;
 @bsh-main: inset 0 1px 0 rgba(255, 255, 255, 0.2);
 
+.main-nav {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.main-nav__list {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.main-nav__wrapper{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-nav__close {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  width: 23px;
+  height: 21px;
+}
+
+.main-nav__close::before,
+.main-nav__close::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 15px;
+  height: 33px;
+  width: 4px;
+  background-color: #fff;
+}
+
+.main-nav__close::before{
+  transform: rotate(45deg);
+}
+
+.main-nav__close::after{
+  transform: rotate(-45deg);
+}
+
+.site-list__item {
+  background-color: @bc-main;
+  box-shadow: @bsh-main;
+  text-align: center;
+  padding-top: 21px;
+  padding-bottom: 20px;
+}
