@@ -1,19 +1,19 @@
 .page-header{
   position: relative;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
-  width: 100%;
   height: 56px;
   background-color: #fff;
 }
 .page-header__logo {
   position: absolute;
   top: 0;
-  left: 50%;
+  left: 110px;
   width: 102px;
   height: 83px;
+  z-index: 2;
 }
-.main-nav__toggle{
+.page-header__toggle {
   position: absolute;
   top: 17px;
   right: 20px;
@@ -22,7 +22,7 @@
   background-color: #81b3d2;
 }
 
-.main-nav__toggle::before {
+.page-header__toggle::before {
   content: "";
   position: absolute;
   top: 4px;
@@ -32,7 +32,7 @@
   background-color: #fff;
 }
 
-.main-nav__toggle::after {
+.page-header__toggle::after {
   content: "";
   position: absolute;
   bottom: 4px;

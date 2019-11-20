@@ -1,6 +1,6 @@
 .advantages {
   width: 100%;
-  background-color: red;
+  height: 1823px;
 }
 
 .advantages ul {
@@ -14,6 +14,10 @@
   display: flex;
   flex-direction: column;
   text-transform: @text-tr;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  overflow: auto;
 }
 
 .advantages-basic{
@@ -35,6 +39,10 @@
   line-height: 21px;
 }
 
+.advantages__image {
+  margin: 0 auto;
+}
+
 .services{
   background-color: #fff;
   color: #000;
@@ -43,13 +51,10 @@
 
 .services__list{
   text-align: left;
-  padding-top: 40px;
-  padding-left: 70px;
-  padding-bottom: 42px;
 }
 
 .services__item--hotel {
-  width: 210px;
+  padding: 41px 41px 40px 70px;
 }
 
 .services__item--hotel::before{
@@ -63,11 +68,11 @@
 }
 
 .services__item--souvenir{
-  width: 199px;
+  padding: 39px 51px 39px 70px;
 }
 
 .services__item--food{
-  width: 180px;
+  padding: 39px 70px 42px 70px;
 }
 
 .services__title{
@@ -76,17 +81,23 @@
   line-height: 26px;
 }
 
+.services__description{
+  color: #333;
+}
+
 .advantages__bottom{
-  background-color: gray;
+  position: relative;
+  background: url("../img/fon.svg") no-repeat 0 0;
+  width: 100%;
+  height: 503px;
 }
 
 .advantages__area{
- width: 238px;;
+  padding: 33px 41px 33px 41px;
 }
 
-
 .advantages__area::after{
-  content: "";
+  content: " ";
   background: url(../img/line.svg) no-repeat 0 0;
   position: absolute;
   top: 167px;
@@ -96,4 +107,21 @@
   opacity: 0.1;
 }
 
+.advantages__road {
+  padding: 66px 57px 66px 57px;
+}
 
+.advantages__road::after {
+  content: " ";
+  background: url(../img/line.svg) no-repeat 0 0;
+  position: absolute;
+  top: 335px;
+  left: 20px;
+  width: 280px;
+  height: 1px;
+  opacity: 0.1;
+}
+
+.advantages__tourists{
+  padding: 66px 37px 32px 37px;
+}
