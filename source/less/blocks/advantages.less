@@ -1,13 +1,10 @@
-.advantages {
-  width: 100%;
-  height: 1823px;
-}
-
-.advantages ul {
-  list-style: none;
+.page-main{
+  display: flex;
+  flex-direction: column;
 }
 
 .advantages__list {
+  list-style: none;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -15,18 +12,15 @@
   flex-direction: column;
   text-transform: @text-tr;
   align-items: center;
-  align-content: center;
-  justify-content: center;
-  overflow: auto;
 }
 
 .advantages-basic{
-  background-color: @bc-main;
   color: #fff;
 }
 
 .advantages-basic__text {
   padding: 43px 28px 45px 28px;
+  background-color: @bc-main;
 }
 
 .advantages__title{
@@ -39,22 +33,20 @@
   line-height: 21px;
 }
 
-.advantages__image {
-  margin: 0 auto;
-}
 
 .services{
   background-color: #fff;
   color: #000;
-  position: relative;
 }
 
 .services__list{
   text-align: left;
+  padding-left: 70px;
+  position: relative;
 }
 
 .services__item--hotel {
-  padding: 41px 41px 40px 70px;
+  padding: 41px 41px 40px 0px;
 }
 
 .services__item--hotel::before{
@@ -62,17 +54,17 @@
   position: absolute;
   top: 26px;
   left: 21px;
+  background: url("../img/icon-house.svg") no-repeat 0 0;
   width: 39px;
   height: 37px;
-  background: url(../img/icon-house.svg) no-repeat 0 0;
 }
 
 .services__item--souvenir{
-  padding: 39px 51px 39px 70px;
+  padding: 0px 51px 39px 0px;
 }
 
 .services__item--food{
-  padding: 39px 70px 42px 70px;
+  padding: 0px 70px 42px 0px;
 }
 
 .services__title{
@@ -85,20 +77,17 @@
   color: #333;
 }
 
-.advantages__bottom{
-  position: relative;
+.advantages__item {
   background: url("../img/fon.svg") no-repeat 0 0;
-  width: 100%;
-  height: 503px;
 }
 
 .advantages__area{
-  padding: 33px 41px 33px 41px;
+  padding: 33px 41px 66px 41px;
 }
 
-.advantages__area::after{
+.advantages__item::before{
   content: " ";
-  background: url(../img/line.svg) no-repeat 0 0;
+  background: url("../img/line.svg") no-repeat 0 0;
   position: absolute;
   top: 167px;
   left: 20px;
@@ -108,12 +97,12 @@
 }
 
 .advantages__road {
-  padding: 66px 57px 66px 57px;
+  padding: 0px 57px 66px 57px;
 }
 
-.advantages__road::after {
+.advantages__item::after{
   content: " ";
-  background: url(../img/line.svg) no-repeat 0 0;
+  background: url("../img/line.svg") no-repeat 0 0;
   position: absolute;
   top: 335px;
   left: 20px;
@@ -123,5 +112,6 @@
 }
 
 .advantages__tourists{
-  padding: 66px 37px 32px 37px;
+  padding: 0px 37px 32px 37px;
 }
+
