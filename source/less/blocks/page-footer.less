@@ -5,26 +5,52 @@
   text-transform: @text-tr;
   text-align: center;
   align-items: center;
-  align-content: center;
-  justify-content: center;
+  justify-content: space-between;
+}
+
+.social__title{
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
 }
 
 .social__list{
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  margin-right: 85px;
+  margin-top: 41px;
+  margin-bottom: 40px;
+}
+
+.social__item{
   display: flex;
 }
 
 .social__link{
   width: 46px;
   height: 48px;
-  background-color: #81b3d2;
+  background-color: @bc-main;
+  margin-right: 6px;
+}
+
+.social__link--twitter{
+  color: #fff;
+  background: @bc-main url("../img/icon-twitter.svg") no-repeat 50% 50%;
+}
+
+.social__link--facebook{
+  background: @bc-main url("../img/icon-facebook.svg") no-repeat 50% 50%;
+}
+
+.social__link--youtube{
+  background: @bc-main url("../img/icon-youtube.svg") no-repeat 50% 50%;
 }
 
 .page-footer__copyright {
   display: flex;
-  /*padding-left: 95px;*/
-  padding-top: 51px;
-  padding-bottom: 35px;
+  margin-bottom: 35px;
   align-items: center;
   align-content: center;
   justify-content: center;
