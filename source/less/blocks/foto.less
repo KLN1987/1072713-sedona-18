@@ -1,0 +1,45 @@
+.foto__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0;
+  align-items: center;
+}
+
+.foto__item {
+  height: 414px;
+  border-bottom: grey solid 1px;
+}
+
+.foto__item:first-child {
+  border-top: grey solid 1px;
+}
+
+.foto__image {
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+.foto__title {
+  text-transform: @text-tr;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.foto__btn-like {
+  float: left;
+  margin-right: 14px;
+  width: 23px;
+  height: 21px;
+  outline: none;
+  border: none;
+  background: url("../img/icon-like.svg") no-repeat 0 0;
+  opacity: 0.3;
+}
+
+.foto__quantity-like {
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: @text-tr;
+}
