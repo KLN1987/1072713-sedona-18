@@ -1,12 +1,10 @@
 .form {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
-  padding: 0;
 }
 
 .form__fieldset {
-  border: 0 none;
+  border: none;
 }
 
 .form__legend {
@@ -18,14 +16,49 @@
   text-transform: @text-tr;
 }
 
-.form__label{
+.form__input {
+  height: 58px;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  padding-left: 22px;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.form__fieldset-name {
+  display: flex;
+  align-items: center;
+}
+
+.form__fieldset-name .form__label {
   text-transform: @text-tr;
 }
 
-.form__field-wrapper{
-  display: flex;
+.form__fieldset-name .form__input {
+  width: 100%;
+  margin-left: 14px;
+  flex-grow: 1;
 }
 
-.form__input{
-  height: 58px;
+.form__fieldset-contacts .form__label {
+  text-transform: @text-tr;
+  padding-left: 42px;
+}
+
+.form__fieldset-contacts .form__input {
+  width: 100%;
+}
+
+.form__textarea {
+  width: 100%;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  padding-left: 22px;
+  padding-top: 22px;
+  background-color: #f2f2f2;
+  border: none;
 }
