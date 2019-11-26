@@ -95,50 +95,54 @@
           <p>Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         </div>
         <div class="video__display">
-        <img width="321" height="201" src="img/video-mobile.jpg">
-        <div class="video__contorls">
-          <div class="video__time">
-            <input type="range" step="0.1" min="0" max="#" value="0">
+          <video class="video__player" poster="img/video-mobile.jpg"></video>
+          <div class="video__show">
+            <div class="video__progress">
+              <span class="video__progress-bar"></span>
+              <button class="video__progress-knob" type="button"><span class="visually-hidden">Перемотка</span></button>
+            </div>
+            <div class="video__contorls">
+              <button type="button" class="video__start"><span class="visually-hidden">В начало</span></button>
+              <button type="button" class="video__titers"><span class="visually-hidden">Титры</span></button>
+              <button type="button" class="video__full-screen"><span class="visually-hidden">Полный
+                  экран</span></button>
+            </div>
           </div>
-          <button type="button" class="video__start"><span class="visually-hidden">В начало</span></button>
-          <button type="button" class="video__titers"><span class="visually-hidden">Титры</span></button>
-          <button type="button" class="video__full-screen"><span class="visually-hidden">Полный экран</span></button>
         </div>
-      </div>
       </div>
     </section>
   </main>
 
 
   <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <div class="page-footer__social social">
-          <div class="social__header">
-            <p class="social__title">#VISITSEDONA</p>
-          </div>
-          <div class="social__icons">
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link social__link--twitter" href="https://www.twitter.com/htmlacademy"
-                  aria-label="Мы в Твитере"></a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Мы в
-              Фейсбуке"></a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy"
-                  aria-label="Мы в Ютубе"></a>
-              </li>
-            </ul>
-          </div>
-          <div class="page-footer__copyright copyright">
-            <p class="copyright__text">Разработано</p>
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
-              <img class="copyright__image" width="27" height="34" src="img/htmlacademy-black.svg"></a>
-          </div>
+    <div class="page-footer__wrapper">
+      <div class="page-footer__social social">
+        <div class="social__header">
+          <p class="social__title">#VISITSEDONA</p>
         </div>
-    </footer>
+        <div class="social__icons">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https://www.twitter.com/htmlacademy"
+                aria-label="Мы в Твитере"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Мы в
+              Фейсбуке"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy"
+                aria-label="Мы в Ютубе"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__text">Разработано</p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
+            <img class="copyright__image" width="27" height="34" src="img/htmlacademy-black.svg"></a>
+        </div>
+      </div>
+  </footer>
 </body>
 
 </html>
