@@ -1,14 +1,9 @@
 .site-list__item {
   background-color: @bc-main;
-  box-shadow: @bsh-main;
-  padding-top: 20px;
-  padding-bottom: 20px;
   text-align: center;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 40px;
-  text-transform: @text-tr;
-  color: #ffffff;
+  box-shadow: @bsh-main;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .site-list__item a {
@@ -17,4 +12,16 @@
   line-height: 40px;
   text-transform: @text-tr;
   color: #ffffff;
+}
+
+.site-list__item:hover {
+  background-color: #669ec0;
+}
+
+.site-list__item:active {
+  background-color: #5496bd;
+}
+
+.site-list__item a:active {
+  color: rgba(255, 255, 255, 0.3);
 }

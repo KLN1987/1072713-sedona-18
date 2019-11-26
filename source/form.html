@@ -12,14 +12,12 @@
 
 <body>
 
-  <header>
+  <header class="page-header">
     <nav class="main-nav">
       <div class="main-nav__wrapper">
-        <a class="main-nav__close" aria-label="Закрыть меню">
-        </a>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="#">Главная</a>
+            <a href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
             <a href="photo-video.html">Фото и видео</a>
@@ -33,13 +31,13 @@
         </ul>
       </div>
     </nav>
-    <div class="page-header">
-      <a class="page-header__logo">
+    <div class="page-header__wrapper">
+      <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83"
           alt="Город Седона">
       </a>
-      <a class="page-header__toggle" type="button" aria-label="Открыть меню">
-      </a>
+      <button class="page-header__btn"><span class="visually-hidden">Меню</span>
+      </button>
     </div>
   </header>
 
@@ -88,15 +86,15 @@
           <legend class="form__legend">Ваше общее впечатление:</legend>
           <ul class="form__list">
             <li class="form__radio radio">
-              <input class="radio__input visually-hidden" type="radio" name="plus" id="plus-item">
+              <input class="radio__input visually-hidden" type="radio" name="impress" value="plus" id="plus-item">
               <label class="radio__label form__label" for="plus-item">Скорее положительное</label>
             </li>
             <li class="form__radio radio">
-              <input class="radio__input visually-hidden" type="radio" name="minus" id="minus-item">
+              <input class="radio__input visually-hidden" type="radio" name="impress" value="minus" id="minus-item">
               <label class="radio__label form__label" for="minus-item">Скорее отрицательное</label>
             </li>
             <li class="form__radio radio">
-              <input class="radio__input visually-hidden" type="radio" name="difficult" id="difficult-item">
+              <input class="radio__input visually-hidden" type="radio" name="impress" value="difficult" id="difficult-item">
               <label class="radio__label form__label" for="difficult-item">Затрудняюсь ответить</label>
             </li>
           </ul>
@@ -135,31 +133,34 @@
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
-      <div class="page-footer__social social">
-        <b class="social__title">#VISITSEDONA</b>
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://www.twitter.com/htmlacademy"
-              aria-label="Мы в Твитере"></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Мы в
+      <div class="page-footer__wrapper">
+        <div class="page-footer__social social">
+          <div class="social__header">
+            <p class="social__title">#VISITSEDONA</p>
+          </div>
+          <div class="social__icons">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--twitter" href="https://www.twitter.com/htmlacademy"
+                  aria-label="Мы в Твитере"></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Мы в
               Фейсбуке"></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy"
-              aria-label="Мы в Ютубе"></a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <p class="copyright__text">Разработано</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"
-          aria-label="HTML Academy"></a>
-      </div>
-    </div>
-  </footer>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy"
+                  aria-label="Мы в Ютубе"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__copyright copyright">
+            <p class="copyright__text">Разработано</p>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
+              <img class="copyright__image" width="27" height="34" src="img/htmlacademy-black.svg"></a>
+          </div>
+        </div>
+    </footer>
 
 
 </body>

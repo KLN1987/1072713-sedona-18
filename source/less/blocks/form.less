@@ -17,6 +17,7 @@
 }
 
 .form__input {
+  font: inherit;
   height: 58px;
   color: #000000;
   font-size: 18px;
@@ -25,6 +26,10 @@
   padding-left: 22px;
   background-color: #f2f2f2;
   border: none;
+}
+
+.form__input::placeholder {
+  color: #000000;
 }
 
 .form__fieldset-name {
@@ -52,6 +57,7 @@
 }
 
 .form__textarea {
+  font: inherit;
   width: 100%;
   color: #000000;
   font-size: 18px;
@@ -61,4 +67,8 @@
   padding-top: 22px;
   background-color: #f2f2f2;
   border: none;
+}
+
+.form__textarea::placeholder {
+  color: #000000;
 }

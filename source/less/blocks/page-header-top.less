@@ -1,4 +1,4 @@
-.page-header {
+.page-header__wrapper {
   position: relative;
   margin: 0;
   padding: 0;
@@ -16,16 +16,17 @@
   z-index: 2;
 }
 
-.page-header__toggle {
+.page-header__btn {
   position: absolute;
   top: 17px;
   left: 277px;
   width: 23px;
   height: 21px;
   background-color: @bc-main;
+  border: none;
 }
 
-.page-header__toggle::before {
+.page-header__btn::before {
   content: "";
   position: absolute;
   top: 4px;
@@ -35,7 +36,7 @@
   background-color: #ffffff;
 }
 
-.page-header__toggle::after {
+.page-header__btn::after {
   content: "";
   position: absolute;
   bottom: 4px;
