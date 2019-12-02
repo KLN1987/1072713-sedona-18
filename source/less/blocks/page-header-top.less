@@ -1,16 +1,25 @@
-.page-header__wrapper {
+.page-header {
+
+  margin: 0 auto;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header__top {
   position: relative;
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
   width: 320px;
-  height: 56px;
+  height: 55px;
   background-color: #ffffff;
 }
 
 .page-header__logo {
   position: absolute;
-  top: 0;
-  left: 110px;
+  background: url("../img/logo-sedona-mobile.svg");
+  left: 0;
+  right: 0;
+  margin: auto;
   width: 102px;
   height: 83px;
   z-index: 2;
@@ -19,7 +28,7 @@
 .page-header__btn {
   position: absolute;
   top: 17px;
-  left: 277px;
+  right: 20px;
   width: 23px;
   height: 21px;
   background-color: @bc-main;
@@ -44,4 +53,20 @@
   width: 100%;
   height: 4px;
   background-color: #ffffff;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__logo {
+    width: 102px;
+    height: 83px;
+    order: 1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__logo {
+    background: url("../img/logo-sedona-desktop.svg") no-repeat 0 0;
+    width: 188px;
+    height: 96px;
+  }
 }
