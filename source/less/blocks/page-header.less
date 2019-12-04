@@ -1,9 +1,9 @@
 .page-header {
-
   margin: 0 auto;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .page-header__top {
@@ -56,14 +56,31 @@
 }
 
 @media (min-width: @tablet-width) {
+  .page-header__btn {
+    display: none;
+  }
+
+  .page-header__top {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 2;
+    width: 188px;
+  }
+
   .page-header__logo {
+    background: url("../img/logo-sedona-tablet.svg") no-repeat 0 0;
     width: 102px;
     height: 83px;
-    order: 1;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .page-header__btn {
+    display: none;
+  }
+
   .page-header__logo {
     background: url("../img/logo-sedona-desktop.svg") no-repeat 0 0;
     width: 188px;

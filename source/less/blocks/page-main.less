@@ -1,12 +1,11 @@
 .page-main {
-  width: 320px;
+  background-color: #ffffff;
   margin: 0 auto;
   position: relative;
 }
 
 .page-main__intro {
   margin: 0 auto;
-  width: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -15,9 +14,8 @@
 .page-main__intro-header {
   position: relative;
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat 0 0;
-  width: 100%;
   height: 389px;
-  margin: 0;
+  background-size: cover;
 }
 
 /*.page-main__intro-header::after {
@@ -31,10 +29,10 @@
 
 .page-main__intro-image {
   margin-top: 90px;
+  margin-bottom: 25px;
 }
 
 .page-main__intro-body {
-  width: 100%;
   color: #333333;
   padding-top: 43px;
   padding-left: 32px;
@@ -61,14 +59,10 @@
   bottom: 0;
   left: 0;
   background: url("../img/white_copy_2.svg") no-repeat 0 0;
+  background-size: cover;
 }
 
 @media (min-width: @tablet-width) {
-  .page-main {
-    width: 100%;
-    margin: 0;
-  }
-
   .page-main__intro {
     margin: 0;
     width: 100%;
@@ -82,6 +76,7 @@
     width: 100%;
     height: 518px;
     margin: 0 auto;
+    background-size: cover;
   }
 
   .page-main__intro-body {
@@ -93,15 +88,22 @@
 }
 
 @media (min-width: @desktop-width) {
-  .page-main {
-    width: 100%;
+  /*.page-main {
     margin: 0;
+  }*/
+
+  .page-main__intro-header {
+    position: relative;
+    background: url("../img/bg-back-desktop@1x.jpg") no-repeat 0 0;
+    width: 100%;
+    height: 518px;
+    margin: 0 auto;
   }
 
   .page-main__intro-body {
     padding-top: 50px;
     padding-bottom: 50px;
-    padding-left: 355px;
-    padding-right: 355px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
