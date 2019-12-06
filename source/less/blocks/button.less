@@ -5,7 +5,7 @@
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
-  margin-bottom: 49px;
+  margin-bottom: 50px;
   text-transform: @text-tr;
   border: none;
   margin-right: 20px;
@@ -21,4 +21,11 @@
 .button:active {
   background-color: #5496bd;
   color: rgba(255, 255, 255, 0.3);
+}
+
+@media (min-width: @tablet-width) {
+  .button {
+    margin-right: 150px;
+    margin-left: 150px;
+  }
 }

@@ -1,9 +1,15 @@
 .copyright {
   display: flex;
   align-items: center;
-  margin-left: 95px;
+  justify-content: center;
 }
 
 .copyright__link {
   margin-left: 11px;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright {
+    .wdt-block();
+  }
 }

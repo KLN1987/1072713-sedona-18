@@ -1,16 +1,14 @@
-.services {
-  background-color: #ffffff;
-  color: #000000;
-}
-
 .services__list {
   text-align: left;
   padding-left: 70px;
   position: relative;
+  background-color: #ffffff;
+  color: #000000;
 }
 
-.services__item--hotel {
-  padding: 41px 41px 40px 0;
+.services__item {
+  padding: 40px 50px 40px 70px;
+  text-align: left;
 }
 
 .services__item--hotel::before {
@@ -23,16 +21,29 @@
   background: url("../img/icon-house.svg") no-repeat 0 0;
 }
 
-.services__item--souvenir {
-  padding: 0 51px 39px 0;
-}
-
-.services__item--food {
-  padding: 0 70px 42px 0;
-}
-
 .services__title {
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
+}
+
+@media (min-width: @tablet-width) {
+  .services__list {
+    width: 100%;
+    display: flex;
+    text-align: center;
+  }
+
+  .services__item {
+    padding: 150px 50px 60px 50px;
+    text-align: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .services__list {
+    display: flex;
+    width: 100%;
+    margin: 0;
+  }
 }
