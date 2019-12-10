@@ -1,6 +1,10 @@
 .main-nav {
-  width: 320px;
+  max-width: 320px;
   margin: 0 auto;
+}
+
+.main-nav__wrapper {
+  width: 320px;
 }
 
 .main-nav__list {
@@ -11,19 +15,23 @@
 
 @media (min-width: @tablet-width) {
   .main-nav {
-    width: auto;
-    margin: 0;
+    max-width: 768px;
+    margin: 0 auto;
   }
 
   .main-nav__wrapper {
+    width: 768px;
     display: flex;
     justify-content: space-between;
-    width: 768px;
-    margin: 0 auto;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .main-nav {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
   .main-nav__wrapper {
     width: 1200px;
   }

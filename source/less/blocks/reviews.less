@@ -1,0 +1,27 @@
+@media (min-width: @tablet-width) {
+  .reviews__form {
+    max-width: 648px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .reviews__present {
+    width: 100%;
+  }
+
+  .reviews__present:nth-child(3) {
+    width: 50%;
+    order: -1;
+  }
+
+  .reviews__present:first-child {
+    width: 50%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews__form {
+    max-width: 960px;
+  }
+}

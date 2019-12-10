@@ -1,9 +1,13 @@
 .map {
   max-width: 320px;
-  height: 350px;
+  margin: 0 auto;
+  margin-top: 70px;
 }
 
-.map__interactive {
-  background: url("../img/bg-map-mobile@1x.jpg") no-repeat 0 0;
-  background-size: cover;
+@media (min-width: @tablet-width) {
+  max-width: 768px;
+}
+
+@media (min-width: @desktop-width) {
+  max-width: 1200px;
 }

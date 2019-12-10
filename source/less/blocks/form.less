@@ -1,7 +1,7 @@
-.form {
+/*.form {
   display: flex;
   flex-direction: column;
-}
+}*/
 
 .form__fieldset {
   border: none;
@@ -104,33 +104,4 @@
   padding-top: 16px;
   padding-bottom: 16px;
   padding-right: 16px;
-}
-
-@media (min-width: @tablet-width) {
-  .form {
-    max-width: 648px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-
-  .form__fieldset {
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .form__fieldset:nth-child(3) {
-    width: 50%;
-    order: -1;
-  }
-
-  .form__fieldset:first-child {
-    width: 50%;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .form {
-    max-width: 960px;
-  }
 }
