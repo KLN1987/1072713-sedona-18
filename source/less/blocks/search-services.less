@@ -1,8 +1,8 @@
 .search-services {
-  display: flex;
-  flex-direction: column;
+  max-width: 320px;
   text-align: center;
-  text-transform: @text-tr;
+  text-transform: uppercase;
+  margin: 0 auto;
 }
 
 .search-services__text {
@@ -35,12 +35,20 @@
 }
 
 @media (min-width: @tablet-width) {
+  .search-services {
+    max-width: 768px;
+  }
+
   .search-services__text {
     padding: 50px 160px 50px 160px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .search-services {
+    max-width: 1200px;
+  }
+
   .search-services__text {
     padding: 50px 380px 50px 380px;
   }
