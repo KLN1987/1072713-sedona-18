@@ -9,11 +9,11 @@
 .services__item {
   text-align: left;
   padding-top: 35px;
-  padding-right: 50px;
+  padding-right: 30px;
   padding-left: 70px;
 }
 
-/*.services__item--hotel::before {
+.services__item--hotel::before {
   content: "";
   position: absolute;
   top: 26px;
@@ -27,30 +27,35 @@
 .services__item--souvenir::before {
   content: "";
   position: absolute;
-  top: 190px;
+  top: 156px;
   left: 25px;
   width: 32px;
   height: 38px;
-  background: url(../img/icon-gift-blue.svg) no-repeat 0 0;
+  background: url("../img/icon-gift-blue.svg") no-repeat 0 0;
   background-size: cover;
 }
 
 .services__item--food::before {
   content: "";
   position: absolute;
-  top: 340px;
+  top: 272px;
   left: 19px;
   width: 40px;
   height: 35px;
-  background: url(../img/icon-burger-blue.svg) no-repeat 0 0;
+  background: url("../img/icon-burger-blue.svg") no-repeat 0 0;
   background-size: cover;
-}*/
+}
 
 .services__title {
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
   margin: 0;
+}
+
+.services__description {
+  margin: 0;
+  margin-bottom: 7px;
 }
 
 @media (min-width: @tablet-width) {
@@ -61,8 +66,55 @@
   }
 
   .services__item {
-    padding: 150px 50px 60px 50px;
+    padding: 149px 40px 47px 40px;
     text-align: center;
+  }
+
+  .services__title {
+    font-size: 21px;
+    margin-top: 10px;
+  }
+
+  .services__description {
+    margin: 0;
+    margin-top: 18px;
+  }
+
+  .services__item--hotel::before {
+    content: "";
+    position: absolute;
+    top: 58px;
+    left: 90px;
+    width: 75px;
+    height: 72px;
+    background: url("../img/icon-house-blue.svg") no-repeat 0 0;
+    background-size: cover;
+  }
+
+  .services__item--souvenir {
+    order: 1;
+  }
+
+  .services__item--souvenir::before {
+    content: "";
+    position: absolute;
+    top: 57px;
+    left: 607px;
+    width: 64px;
+    height: 75px;
+    background: url("../img/icon-gift-blue.svg") no-repeat 0 0;
+    background-size: cover;
+  }
+
+  .services__item--food::before {
+    content: "";
+    position: absolute;
+    top: 59px;
+    left: 345px;
+    width: 77px;
+    height: 68px;
+    background: url("../img/icon-burger-blue.svg") no-repeat 0 0;
+    background-size: cover;
   }
 }
 
@@ -71,5 +123,51 @@
     display: flex;
     width: 100%;
     margin: 0;
+  }
+
+  .services__item {
+    padding: 148px 40px 36px 40px;
+  }
+
+  .services__title {
+    padding-right: 22px;
+  }
+
+  .services__description {
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+
+  .services__item--hotel::before {
+    content: "";
+    position: absolute;
+    top: 58px;
+    left: 160px;
+    width: 75px;
+    height: 72px;
+    background: url("../img/icon-house-blue.svg") no-repeat 0 0;
+    background-size: cover;
+  }
+
+  .services__item--souvenir::before {
+    content: "";
+    position: absolute;
+    top: 57px;
+    left: 968px;
+    width: 64px;
+    height: 75px;
+    background: url("../img/icon-gift-blue.svg") no-repeat 0 0;
+    background-size: cover;
+  }
+
+  .services__item--food::before {
+    content: "";
+    position: absolute;
+    top: 59px;
+    left: 561px;
+    width: 77px;
+    height: 68px;
+    background: url("../img/icon-burger-blue.svg") no-repeat 0 0;
+    background-size: cover;
   }
 }
