@@ -1,9 +1,16 @@
 .main-nav {
   max-width: 320px;
   margin: 0 auto;
+  position: relative;
 }
 
-.main-nav__wrapper {
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/*.main-nav__wrapper {
   width: 320px;
 }
 
@@ -11,6 +18,92 @@
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.main-nav__btn {
+  content: "";
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  width: 23px;
+  height: 22px;
+  background-color: @bc-main;
+  border: none;
+}
+
+.main-nav__btn::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: -4px;
+  width: 30px;
+  height: 4px;
+  background-color: #ffffff;
+  transform: rotate(45deg);
+}
+
+.main-nav__btn::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: -4px;
+  width: 30px;
+  height: 4px;
+  background-color: #ffffff;
+  transform: rotate(-45deg);
+}*/
+
+@media (max-width: @mobile-width-only) {
+  .main-nav--closed {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__btn {
+    display: none;
+  }
+
+  .main-nav--opened .main-nav__wrapper {
+    width: 320px;
+  }
+
+  .main-nav--opened .main-nav__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .main-nav--opened .main-nav__btn {
+    content: "";
+    position: absolute;
+    top: 17px;
+    right: 20px;
+    width: 23px;
+    height: 22px;
+    background-color: @bc-main;
+    border: none;
+  }
+
+  .main-nav--opened .main-nav__btn::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: -4px;
+    width: 30px;
+    height: 4px;
+    background-color: #ffffff;
+    transform: rotate(45deg);
+  }
+
+  .main-nav--opened .main-nav__btn::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: -4px;
+    width: 30px;
+    height: 4px;
+    background-color: #ffffff;
+    transform: rotate(-45deg);
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -24,11 +117,19 @@
     display: flex;
     justify-content: space-between;
   }
+
+  .main-nav__btn {
+    display: none;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .main-nav {
     max-width: 1200px;
     margin: 0 auto;
+  }
+
+  .main-nav__btn {
+    display: none;
   }
 }

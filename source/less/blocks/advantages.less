@@ -16,22 +16,27 @@
 
 .advantages__list-bottom {
   background-color: #eeeeee;
-  margin-top: -30px;
+  margin: 0;
+  margin-top: -14px;
 }
 
-.advantages__item--basic .advantages__text {
-  padding-top: 35px;
-  padding-bottom: 10px;
-  padding-left: 17px;
-  padding-right: 17px;
+.advantages__item--basic {
   color: #ffffff;
   background-color: @bc-main;
 }
 
-.advantages__text {
-  padding-top: 11px;
-  padding-left: 32px;
-  padding-right: 32px;
+.advantages__text--city {
+  padding-top: 38px;
+  padding-bottom: 19px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.advantages__text--bridge {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .advantages__image-view {
@@ -48,8 +53,38 @@
   margin-bottom: 15px;
 }
 
+.advantages__text--area .advantages__title {
+  padding-top: 11px;
+}
+
+.advantages__text--area .advantages__description {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.advantages__text--road .advantages__title,
+.advantages__text--tourists .advantages__title {
+  margin-top: 47px;
+}
+
+.advantages__text--road .advantages__description {
+  padding-left: 33px;
+  padding-right: 33px;
+}
+
+.advantages__text--tourists .advantages__description {
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+}
+
 .advantages__number {
   line-height: 21px;
+  margin-top: -4px;
+}
+
+.advantages__description {
+  margin-top: -4px;
 }
 
 .advantages__item--basic:first-child::before {
@@ -114,16 +149,82 @@
     font-size: 21px;
   }
 
-  .advantages__text {
-    padding-top: 25px;
-    padding-bottom: 15px;
-    padding-left: 49px;
-    padding-right: 48px;
-  }
+  /*.advantages__text {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }*/
 
-  .advantages__item--basic .advantages__text {
+  .advantages__text--city {
     padding-top: 25px;
     padding-bottom: 18px;
+    padding-left: 47px;
+    padding-right: 47px;
+  }
+
+  /*.advantages__item--basic .advantages__text {
+    padding-top: 25px;
+    padding-bottom: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }*/
+
+  .advantages__text--bridge {
+    padding-top: 24px;
+    padding-bottom: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .advantages__text--bridge .advantages__title {
+    padding-left: 33px;
+    padding-right: 43px;
+  }
+
+  .advantages__text--bridge .advantages__description {
+    margin-top: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 24px;
+  }
+
+  .advantages__text--area .advantages__title {
+    padding-top: 23px;
+    padding-left: 24px;
+    padding-right: 25px;
+  }
+
+  .advantages__text--area .advantages__description {
+    padding-left: 47px;
+    padding-right: 48px;
+    padding-top: 12px;
+    line-height: 21px;
+    padding-bottom: 31px;
+  }
+
+  .advantages__text--road .advantages__title {
+    margin-top: 45px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .advantages__text--road .advantages__description {
+    padding-top: 9px;
+    line-height: 21px;
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+
+  .advantages__text--tourists .advantages__title {
+    margin-top: 45px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .advantages__text--tourists .advantages__description {
+    line-height: 21px;
+    padding-top: 10px;
     padding-left: 40px;
     padding-right: 40px;
   }
@@ -156,6 +257,18 @@
     margin-top: -15px;
   }
 
+  .advantages__number {
+    margin-top: 8px;
+  }
+
+  .advantages__list-bottom .advantages__number {
+    margin-top: 11px;
+  }
+
+  .advantages__description {
+    margin-top: 14px;
+  }
+
   .advantages__item {
     display: flex;
   }
@@ -168,7 +281,7 @@
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-    padding-top: 40px;
+    margin-top: 40px;
   }
 
   .advantages__item--basic:last-child {
@@ -188,7 +301,7 @@
   }
 
   .advantages__text {
-    padding: 50px 55px 43px 51px;
+    padding: 31px 30px 35px 30px;
   }
 
   .advantages__item--basic .advantages__text {
@@ -196,6 +309,48 @@
     padding-bottom: 35px;
     padding-left: 54px;
     padding-right: 57px;
+  }
+
+  .advantages__text--bridge .advantages__title {
+    padding-left: 70px;
+    padding-right: 69px;
+  }
+
+  .advantages__text--bridge .advantages__description {
+    padding-left: 31px;
+    padding-right: 30px;
+    padding-top: 3px;
+  }
+
+  .advantages__text--area .advantages__title {
+    margin-top: -8px;
+    padding-left: 60px;
+    padding-right: 61px;
+  }
+
+  .advantages__text--area .advantages__description {
+    padding-left: 23px;
+    padding-right: 27px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+  }
+
+  .advantages__text--road .advantages__title {
+    margin-top: 13px;
+    padding-left: 80px;
+    padding-right: 82px;
+  }
+
+  .advantages__text--road .advantages__description {
+    margin-top: 13px;
+    padding-left: 35px;
+    padding-right: 28px;
+  }
+
+  .advantages__text--tourists .advantages__title {
+    margin-top: 14px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
 
   .advantages__image {

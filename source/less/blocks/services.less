@@ -13,6 +13,11 @@
   padding-left: 70px;
 }
 
+.services__item--hotel .services__description {
+  margin-bottom: -21px;
+  margin-top: 6px;
+}
+
 .services__item--hotel::before {
   content: "";
   position: absolute;
@@ -24,6 +29,14 @@
   background-size: cover;
 }
 
+.services__item--souvenir {
+  margin-top: 7px;
+}
+
+.services__item--souvenir .services__description {
+  margin-top: 10px;
+}
+
 .services__item--souvenir::before {
   content: "";
   position: absolute;
@@ -33,6 +46,11 @@
   height: 38px;
   background: url("../img/icon-gift-blue.svg") no-repeat 0 0;
   background-size: cover;
+}
+
+.services__item--food {
+  margin-top: -16px;
+  margin-bottom: 33px;
 }
 
 .services__item--food::before {
@@ -66,18 +84,30 @@
   }
 
   .services__item {
-    padding: 149px 40px 47px 40px;
+    padding: 0;
+    padding-top: 140px;
+    padding-bottom: 28px;
     text-align: center;
   }
 
   .services__title {
     font-size: 21px;
-    margin-top: 10px;
   }
 
   .services__description {
     margin: 0;
     margin-top: 18px;
+  }
+
+  .services__item--hotel .services__title {
+    margin-top: 19px;
+  }
+
+  .services__item--hotel .services__description {
+    margin-top: 22px;
+    padding-left: 45px;
+    padding-right: 56px;
+    line-height: 20px;
   }
 
   .services__item--hotel::before {
@@ -95,6 +125,17 @@
     order: 1;
   }
 
+  .services__item--souvenir .services__title {
+    margin-top: 11px;
+    padding-right: 40px;
+  }
+
+  .services__item--souvenir .services__description {
+    margin-top: 20px;
+    line-height: 21px;
+    padding-right: 44px;
+  }
+
   .services__item--souvenir::before {
     content: "";
     position: absolute;
@@ -104,6 +145,18 @@
     height: 75px;
     background: url("../img/icon-gift-blue.svg") no-repeat 0 0;
     background-size: cover;
+  }
+
+  .services__item--food .services__title {
+    margin-top: 35px;
+    padding-right: 53px;
+  }
+
+  .services__item--food .services__description {
+    line-height: 21px;
+    padding-left: 36px;
+    padding-right: 94px;
+    margin-top: 21px;
   }
 
   .services__item--food::before {
@@ -126,7 +179,8 @@
   }
 
   .services__item {
-    padding: 148px 40px 36px 40px;
+    padding-top: 149px;
+    padding-bottom: 10px;
   }
 
   .services__title {
@@ -149,6 +203,11 @@
     background-size: cover;
   }
 
+  .services__item--hotel .services__title {
+    margin-top: 12px;
+    padding-left: 34px;
+  }
+
   .services__item--souvenir::before {
     content: "";
     position: absolute;
@@ -160,6 +219,16 @@
     background-size: cover;
   }
 
+  .services__item--souvenir .services__title {
+    margin-top: 4px;
+    padding-left: 79px;
+  }
+
+  .services__item--souvenir .services__description {
+    padding-left: 140px;
+    padding-right: 71px;
+  }
+
   .services__item--food::before {
     content: "";
     position: absolute;
@@ -169,5 +238,15 @@
     height: 68px;
     background: url("../img/icon-burger-blue.svg") no-repeat 0 0;
     background-size: cover;
+  }
+
+  .services__item--food .services__title {
+    margin-top: 26px;
+    padding-left: 104px;
+  }
+
+  .services__item--food .services__description {
+    padding-left: 67px;
+    padding-right: 19px;
   }
 }
