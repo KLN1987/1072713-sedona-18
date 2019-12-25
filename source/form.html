@@ -14,7 +14,7 @@
 <body>
   <div class="container">
     <header class="page-header">
-      <nav class="main-nav main-nav--closed main-nav--nojs">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list__right">
             <li class="site-list__item">
@@ -44,11 +44,11 @@
 
     <main class="page-main">
       <section class="page-main__intro">
-        <div class="page-main__intro-header">
-          <img class="page-main__intro-image intro-inner" src="img/text-sedona.svg" width="229" height="39"
+        <div class="page-main__intro-header inner-intro">
+          <img class="page-main__intro-image inner-intro__text" src="img/text-sedona.svg" width="229" height="39"
             alt="Приветсвие!">
         </div>
-        <div class="page-main__intro-body">
+        <div class="page-main__intro-body inner-intro__body">
           <h1 class="page-main__title heading-primary">Оставьте свой отзыв</h1>
           <p class="page-main__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о
             посещенных
@@ -64,27 +64,27 @@
               <label class="form__label" for="name">Имя<sup>*</sup>:</label>
               <input class="form__input" type="text" name="name" id="name" placeholder="Петр">
             </p>
-            <p class="form__field-wrapper form__fieldset-name">
+            <p class="form__field-wrapper form__fieldset-surname">
               <label class="form__label" for="surname">Фамилия<sup>*</sup>:</label>
               <input class="form__input" type="text" name="surname" id="surname" placeholder="Иванов">
             </p>
-            <p class="form__field-wrapper form__fieldset-name">
+            <p class="form__field-wrapper form__fieldset-patronymic">
               <label class="form__label" for="patronymic">Отчество:</label>
               <input class="form__input" type="text" name="patronymic" id="patronymic" placeholder="Александрович">
             </p>
           </fieldset>
-          <fieldset class="form__fieldset reviews__present">
+          <fieldset class="form__fieldset reviews__contacts">
             <legend class="form__legend">Контактная информация:</legend>
             <p class="form__field-wrapper form__fieldset-contacts">
               <label class="form__label" for="tel">Контактный телефон<sup>*</sup>:</label>
               <input class="form__input" type="tel" name="tel" id="tel" placeholder="Введите телефон">
             </p>
-            <p class="form__field-wrapper form__fieldset-contacts">
+            <p class="form__field-wrapper form__fieldset-email">
               <label class="form__label" for="email">Электронная почта<sup>*</sup>:</label>
               <input class="form__input" type="email" name="email" id="email" placeholder="Введите e-mail">
             </p>
           </fieldset>
-          <fieldset class="form__fieldset reviews__present">
+          <fieldset class="form__fieldset reviews__impressions">
             <legend class="form__legend">Ваше общее впечатление:</legend>
             <ul class="form__list">
               <li class="form__radio radio">
@@ -102,7 +102,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__fieldset reviews__present">
+          <fieldset class="form__fieldset reviews__attractions">
             <legend class="form__legend">Посещенные достопримечательности:</legend>
             <ul class="form__list">
               <li class="form__checkbox checkbox">
@@ -123,7 +123,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__fieldset reviews__present">
+          <fieldset class="form__fieldset reviews__emotions">
             <legend class="form__legend">Опишите свои эмоции:</legend>
             <p class="form__field-wrapper">
               <textarea name="text" class="form__textarea" rows="5"
@@ -139,7 +139,7 @@
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
+      <div class="page-footer__wrapper page-footer__inner">
         <div class="social__header">
           <p class="social__title">#VISITSEDONA</p>
         </div>
