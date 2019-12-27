@@ -15,7 +15,9 @@
 
   <div class="container">
     <header class="page-header">
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__btn"><span class="visually-hidden">Меню</span>
+        </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list__right">
             <li class="site-list__item">
@@ -37,8 +39,6 @@
       </nav>
       <div class="page-header__top">
         <a class="page-header__logo"></a>
-        <button class="page-header__btn"><span class="visually-hidden">Меню</span>
-        </button>
       </div>
     </header>
 
@@ -59,7 +59,7 @@
         <ul class="advantages__list-top">
           <li class="advantages__item advantages__item--basic">
             <div class="advantages__description-image">
-              <div class="advantages__text">
+              <div class="advantages__text advantages__text--city">
                 <h3 class="advantages__title">Настоящий городок</h3>
                 <p class="advantages__number">&ndash;№1&ndash;</p>
                 <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
@@ -87,8 +87,8 @@
 
           <li class="advantages__item advantages__item--basic">
             <div class="advantages__description-image">
-              <div class="advantages__text">
-                <h3 class="advantages__title">Там есть мост Дьявола</h3>
+              <div class="advantages__text advantages__text--bridge">
+                <h3 class="advantages__title">Там есть мост&nbsp;Дьявола</h3>
                 <p class="advantages__number">&ndash;№2&ndash;</p>
                 <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
@@ -102,7 +102,7 @@
 
         <ul class="advantages__list-bottom">
           <li class="advantages__item">
-            <div class="advantages__text">
+            <div class="advantages__text advantages__text--area">
               <h3 class="advantages__title">Небольшая площадь</h3>
               <p class="advantages__number">&ndash;№3&ndash;</p>
               <p class="advantages__description">Все интересные места находятся очень близко</p>
@@ -110,7 +110,7 @@
           </li>
 
           <li class="advantages__item">
-            <div class="advantages__text">
+            <div class="advantages__text advantages__text--road">
               <h3 class="advantages__title">Красивая дорога</h3>
               <p class="advantages__number">&ndash;№4&ndash;</p>
               <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
@@ -118,7 +118,7 @@
           </li>
 
           <li class="advantages__item">
-            <div class="advantages__text">
+            <div class="advantages__text advantages__text--tourists">
               <h3 class="advantages__title">Мало туристов</h3>
               <p class="advantages__number">&ndash;№5&ndash;</p>
               <p class="advantages__description">Большинство едет в гранд каньон и толпится там</p>
@@ -139,8 +139,8 @@
 
       <div class="map">
         <a class="map__interactive" href="#">
-          <img class="map__interactive-image" alt="Место нахождение Седоны"
-            src="img/map-mobile.jpg">
+          <img class="map__interactive-image" alt="Место нахождение Седоны" width="320" height="350"
+            src="img/bg-map-mobile@1x.jpg">
         </a>
       </div>
     </main>
@@ -174,6 +174,8 @@
       </div>
     </footer>
   </div>
+
+  <script src="js/main-nav.js"></script>
 
 </body>
 
