@@ -35,9 +35,9 @@
             </li>
           </ul>
         </div>
-      <div class="page-header__top">
-        <a class="page-header__logo" href="index.html"></a>
-      </div>
+        <div class="page-header__top">
+          <a class="page-header__logo" href="index.html"></a>
+        </div>
     </header>
 
     <main class="page-main">
@@ -73,14 +73,16 @@
           </fieldset>
           <fieldset class="form__fieldset reviews__contacts">
             <legend class="form__legend">Контактная информация:</legend>
-            <p class="form__field-wrapper form__fieldset-contacts">
-              <label class="form__label" for="tel">Контактный телефон<sup>*</sup>:</label>
-              <input class="form__input" type="tel" name="tel" id="tel" placeholder="Введите телефон">
-            </p>
-            <p class="form__field-wrapper form__fieldset-email">
-              <label class="form__label" for="email">Электронная почта<sup>*</sup>:</label>
-              <input class="form__input" type="email" name="email" id="email" placeholder="Введите e-mail">
-            </p>
+            <div class="form__fieldset-container">
+              <p class="form__field-wrapper form__fieldset-contacts">
+                <label class="form__label" for="tel"><span class="form__label-contact">Контактный</span>телефон<sup>*</sup>:</label>
+                <input class="form__input" type="tel" name="tel" id="tel" placeholder="Введите телефон">
+              </p>
+              <p class="form__field-wrapper form__fieldset-email">
+                <label class="form__label" for="email">Электронная почта<sup>*</sup>:</label>
+                <input class="form__input" type="email" name="email" id="email" placeholder="Введите e-mail">
+              </p>
+            </div>
           </fieldset>
           <fieldset class="form__fieldset reviews__impressions">
             <legend class="form__legend">Ваше общее впечатление:</legend>
