@@ -183,11 +183,13 @@
 
   .form__field-wrapper {
     flex-wrap: nowrap;
+    max-width: 648px;
   }
 
   .form__fieldset-name {
-    padding-top: 52px;
-    padding-left: 47px;
+    padding: 0;
+    padding-top: 57px;
+    padding-left: 61px;
     margin: 0;
   }
 
@@ -201,8 +203,12 @@
     padding-left: 49px;
   }
 
+  .form__fieldset-surname .form__label {
+    margin-left: 15px;
+  }
+
   .form__fieldset-surname .form__input {
-    width: 184px;
+    width: 178px;
   }
 
   .form__fieldset-patronymic {
@@ -213,8 +219,105 @@
     width: 180px;
   }
 
+  .form__fieldset-patronymic .form__label {
+    margin-left: 27px;
+  }
+
+  .form__fieldset-patronymic .form__input {
+    width: 180px;
+    margin-left: 16px;
+    padding-top: 19px;
+    padding-bottom: 22px;
+    padding-left: 21px;
+  }
+
+  .form__fieldset-contacts .form__label {
+    padding-left: 23px;
+    padding-top: 19px;
+  }
+
+  .form__fieldset-contacts .form__input,
+  .form__fieldset-email .form__input {
+    padding-left: 22px;
+    padding-right: 72px;
+  }
+
+  .form__fieldset-email .form__label {
+    padding-top: 18px;
+  }
+
   .form__radio:first-child {
     margin-top: 73px;
-    margin-left: -10px;
+    margin-left: -11px;
   }
+
+  .form__radio:nth-child(2) {
+    margin-top: 51px;
+    margin-left: -11px;
+  }
+
+  .form__radio:last-child {
+    margin-top: 52px;
+    margin-left: -11px;
+  }
+
+  .form__checkbox {
+    width: 50%;
+  }
+
+  .form__checkbox:first-child {
+    margin-top: 51px;
+    padding-left: 38px;
+  }
+
+  .form__checkbox:nth-child(2) {
+    margin-top: 51px;
+    padding-left: 64px;
+  }
+
+  .form__checkbox:nth-child(3) {
+    padding-left: 40px;
+    padding-top: 8px;
+  }
+
+  .form__checkbox:last-child {
+    padding-left: 62px;
+    padding-top: 10px;
+  }
+
+  .form__fieldset-contacts,
+  .form__fieldset-email {
+    flex-wrap: wrap;
+  }
+
+  .form__textarea {
+    margin-top: 53px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__fieldset-name {
+    padding-left: 80px;
+  }
+
+  .form__fieldset-name .form__input {
+    width: 350px;
+  }
+
+  .form__fieldset-surname {
+    padding-left: 66px;
+  }
+
+  .form__fieldset-surname .form__input {
+    width: 312px;
+  }
+
+  .form__fieldset-patronymic {
+    padding-left: 54px;
+  }
+
+  .form__fieldset-patronymic .form__input {
+    width: 314px;
+  }
+
 }
