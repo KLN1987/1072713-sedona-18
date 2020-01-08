@@ -38,7 +38,14 @@
         </div>
       </nav>
       <div class="page-header__top">
-        <a class="page-header__logo" href="index.html"></a>
+        <a class="page-header__logo">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="282" height="214"
+              alt="Логотип Седона">
+          </picture>
+        </a>
       </div>
     </header>
 
@@ -61,7 +68,12 @@
           <ul class="foto__list">
             <li class="foto__item">
               <div class="foto__image foto__sunset">
-                <img src="img/photo-1-desktop.jpg" width="1200" height="400" alt="Просторы">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg">
+                  <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg">
+                  <img class="foto__image-picture" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280"
+                    alt="Просторы">
+                </picture>
               </div>
               <div class="foto__menu">
                 <div class="foto__discription">
@@ -76,7 +88,11 @@
             </li>
             <li class="foto__item">
               <div class="foto__image foto__cactus">
-                <img src="img/photo-2-desktop.jpg" width="400" height="267" alt="Кактус">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg">
+                  <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg">
+                  <img src="img/photo-cactus-mobile@1x.jpg" width="400" height="267" alt="Кактус">
+                </picture>
               </div>
               <div class="foto__menu">
                 <div class="foto__discription">
@@ -91,7 +107,11 @@
             </li>
             <li class="foto__item">
               <div class="foto__image foto__roads">
-                <img src="img/photo-3-desktop.jpg" width="400" height="267" alt="Дорога">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg">
+                  <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg">
+                  <img src="img/photo-roads-mobile@1x.jpg" width="400" height="267" alt="Дорога">
+                </picture>
               </div>
               <div class="foto__menu">
                 <div class="foto__discription">
@@ -106,7 +126,11 @@
             </li>
             <li class="foto__item">
               <div class="foto__image foto__bridge">
-                <img src="img/photo-4-desktop.jpg" width="400" height="267" alt="Мост">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg">
+                  <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg">
+                  <img src="img/photo-bridge-mobile@1x.jpg" width="400" height="267" alt="Мост">
+                </picture>
               </div>
               <div class="foto__menu">
                 <div class="foto__discription">
@@ -129,12 +153,15 @@
             <p>Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
           </div>
           <div class="video__display">
-            <video class="video__player" poster="img/video-mobile.jpg"></video>
+            <video class="video__player" poster="img/video-mobile@1x.jpg">
+              <source media="(min-width: 1200px)" poster="img/video-desktop@1x.jpg">
+              <source media="(min-width: 768px)" poster="img/video-tablet@1x.jpg">
+            </video>
             <div class="video__show">
               <div class="video__progress">
                 <span class="video__progress-bar"></span>
                 <button class="video__progress-knob" type="button"><span
-                    class="visually-hidden">Перемотка</span></button>
+                    class="visually-hidden">Перемотка</span></button>-->
               </div>
               <div class="video__contorls">
                 <button type="button" class="video__start"><span class="visually-hidden">В начало</span></button>
@@ -180,6 +207,10 @@
   </div>
 
   <script src="js/main-nav.js"></script>
+  <script>
+    document.createElement("picture");
+  </script>
+  <script src="picturefill.js" async></script>
 
 </body>
 

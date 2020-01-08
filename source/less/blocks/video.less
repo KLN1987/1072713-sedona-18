@@ -5,7 +5,7 @@
   align-items: center;
   max-width: 320px;
   margin: 0 auto;
-  margin-bottom: 115px;
+  margin-bottom: 112px;
 }
 
 .video__header {
@@ -39,6 +39,7 @@
 }
 
 .video__progress {
+  position: relative;
   height: 45px;
   background: #000000;
   opacity: 0.6;
@@ -50,22 +51,52 @@
   display: flex;
 }
 
+.video__progress-bar {
+  position: absolute;
+  top: 22px;
+  left: 22px;
+  width: 235px;
+  height: 3px;
+  background-color: #ffffff;
+  opacity: 0.2;
+}
+
+.video__progress-knob {
+  position: absolute;
+  top: 19px;
+  left: 57px;
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+  padding: 0;
+  border-radius: 50%;
+}
+
 .video__start {
-  margin-left: 25px;
-  width: 16px;
-  height: 20px;
+  margin-left: 24px;
+  margin-top: 22px;
+  width: 23px;
+  height: 23px;
+  background: url("../img/icon-video-replay.svg") no-repeat 0 0;
+  border: none;
 }
 
 .video__titers {
-  margin-left: 174px;
+  margin-left: 126px;
+  margin-top: 23px;
   width: 32px;
   height: 20px;
+  background: url("../img/icon-video-subtitles.svg") no-repeat 0 0;
+  border: none;
 }
 
 .video__full-screen {
-  margin-right: 23px;
+  margin-top: 23px;
+  margin-left: 31px;
   width: 20px;
   height: 20px;
+  background: url("../img/icon-video-fullscreen.svg") no-repeat 0 0;
+  border: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -112,29 +143,47 @@
     width: 100%;
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -49px;
     background: #000000;
     opacity: 0.6;
+    height: 93px;
   }
 
   .video__progress {
     position: absolute;
-    left: 92px;
-    bottom: 45px;
+    left: 93px;
+    bottom: 25px;
     z-index: 2;
     width: 389px;
+    background: rgba(0, 0, 0, 0);
+  }
+
+  .video__progress-bar {
+    width: 100%;
+    left: 0;
+  }
+
+  .video__progress-knob {
+    left: 112px;
   }
 
   .video__start {
     margin-left: 35px;
+    margin-top: 34px;
+    padding: 8px;
+    background: url("../img/icon-video-replay-white.svg") no-repeat 0 0;
   }
 
   .video__titers {
-    margin-left: 520px;
+    margin-top: 34px;
+    margin-left: 466px;
+    background: url("../img/icon-video-subtitles-white.svg");
   }
 
   .video__full-screen {
+    margin-top: 35px;
     margin-right: 40px;
+    background: url("../img/icon-video-fullscreen-white.svg");
   }
 }
 
@@ -154,6 +203,6 @@
   }
 
   .video__titers {
-    margin-left: 675px;
+    margin-left: 617px;
   }
 }

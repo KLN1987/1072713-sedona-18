@@ -38,7 +38,14 @@
         </div>
       </nav>
       <div class="page-header__top">
-        <a class="page-header__logo"></a>
+        <a class="page-header__logo">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="282" height="214"
+              alt="Логотип Седона">
+          </picture>
+        </a>
       </div>
     </header>
 
@@ -66,8 +73,12 @@
               </div>
             </div>
             <div class="advantages__image">
-              <img class="advantages__image-view" width="520" height="260" alt="фото Седоны"
-                src="img/photo-city@1x.jpg">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg">
+                <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg">
+                <img class="advantages__image-view" width="520" height="260" alt="фото Седоны"
+                  src="img/main-city-mobile@1x.jpg">
+              </picture>
             </div>
             <ul class="services__list">
               <li class="services__item services__item--hotel">
@@ -94,8 +105,12 @@
               </div>
             </div>
             <div class="advantages__image">
-              <img class="advantages__image-view" width="520" height="260" alt="фото моста Дьявола"
-                src="img/photo-bridge@1x.jpg">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg">
+                <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg">
+                <img class="advantages__image-view" width="520" height="260" alt="фото моста Дьявола"
+                  src="img/main-bridge-mobile@1x.jpg">
+              </picture>
             </div>
           </li>
         </ul>
@@ -139,8 +154,12 @@
 
       <div class="map">
         <a class="map__interactive" href="#">
-          <img class="map__interactive-image" alt="Место нахождение Седоны" width="320" height="350"
-            src="img/bg-map-mobile@1x.jpg">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg">
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg">
+            <img class="map__interactive-image" alt="Место нахождение Седоны" width="320" height="350"
+              src="img/bg-map-mobile@1x.jpg">
+          </picture>
         </a>
       </div>
     </main>
@@ -176,6 +195,10 @@
   </div>
 
   <script src="js/main-nav.js"></script>
+  <script>
+    document.createElement("picture");
+  </script>
+  <script src="picturefill.js" async></script>
 
 </body>
 

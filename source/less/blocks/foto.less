@@ -7,26 +7,6 @@
   max-width: 280px;
 }
 
-/*.foto__sunset {
-  background: url("../img/photo-sunset-mobile@1x.jpg") no-repeat 0 0;
-  height: 280px;
-}
-
-.foto__cactus {
-  background: url("../img/photo-cactus-mobile@1x.jpg") no-repeat 0 0;
-  height: 280px;
-}
-
-.foto__roads {
-  background: url("../img/photo-roads-mobile@1x.jpg") no-repeat 0 0;
-  height: 280px;
-}
-
-.foto__bridge {
-  background: url("../img/photo-bridge-mobile@1x.jpg") no-repeat 0 0;
-  height: 280px;
-}*/
-
 .foto__title {
   text-transform: @text-tr;
   font-weight: 700;
@@ -45,7 +25,6 @@
 }
 
 .foto__btn-like {
-  /*float: left;*/
   margin-right: 14px;
   width: 23px;
   height: 21px;
@@ -56,9 +35,13 @@
 }
 
 .foto__image {
+  width: 100%;
   height: 280px;
-  background-color: red;
   margin-top: 30px;
+}
+
+.foto__image-picture {
+  width: 100%;
 }
 
 .foto__quantity-like {
@@ -94,7 +77,6 @@
 
   .foto__image:first-child {
     height: 400px;
-    background-color: red;
     margin: 0;
   }
 
@@ -123,23 +105,6 @@
     align-content: center;
     padding-bottom: 15px;
   }
-
-  /*.foto__sunset {
-    background: url("../img/photo-sunset-tablet@1x.jpg") no-repeat 0 0;
-    background-size: cover;
-  }
-
-  .foto__cactus {
-    background: url("../img/photo-cactus-tablet@1x.jpg") no-repeat 0 0;
-  }
-
-  .foto__roads {
-    background: url("../img/photo-roads-tablet@1x.jpg") no-repeat 0 0;
-  }
-
-  .foto__bridge {
-    background: url("../img/photo-bridge-tablet@1x.jpg") no-repeat 0 0;
-  }*/
 }
 
 @media (min-width: @desktop-width) {
@@ -181,26 +146,6 @@
   .foto__like {
     margin-right: 20px;
   }
-
-  /*.foto__sunset {
-    background: url("../img/photo-sunset-desktop@1x.jpg") no-repeat 0 0;
-    background-size: cover;
-  }
-
-  .foto__cactus {
-    background: url("../img/photo-cactus-desktop@1x.jpg") no-repeat 0 0;
-    background-size: cover;
-  }
-
-  .foto__roads {
-    background: url("../img/photo-roads-desktop@1x.jpg") no-repeat 0 0;
-    background-size: cover;
-  }
-
-  .foto__bridge {
-    background: url("../img/photo-bridge-desktop@1x.jpg") no-repeat 0 0;
-    background-size: cover;
-  }*/
 
   .foto__btn-like {
     background: url("../img/icon-like-white.svg") no-repeat 0 0;

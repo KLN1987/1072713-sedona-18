@@ -14,7 +14,6 @@
 
 .page-header__logo {
   position: absolute;
-  background: url("../img/logo-sedona-mobile.svg");
   left: 0;
   right: 0;
   margin: auto;
@@ -35,7 +34,6 @@
   }
 
   .page-header__logo {
-    background: url("../img/logo-sedona-tablet.svg") no-repeat 0 0;
     width: 102px;
     height: 83px;
   }
@@ -43,8 +41,10 @@
 
 @media (min-width: @desktop-width) {
   .page-header__logo {
-    background: url("../img/logo-sedona-desktop.svg") no-repeat 0 0;
     width: 188px;
     height: 96px;
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: cover;
   }
 }
