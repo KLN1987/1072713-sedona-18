@@ -1,3 +1,7 @@
+.form {
+  position: relative;
+}
+
 .form__fieldset {
   border: none;
 }
@@ -43,6 +47,7 @@
   font-weight: 700;
   line-height: 26px;
   padding-left: 20px;
+  padding-right: 65px;
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: #f2f2f2;
@@ -66,6 +71,55 @@
   padding-top: 16px;
   padding-bottom: 16px;
   padding-right: 16px;
+}
+
+.form__fieldset-contacts,
+.form__fieldset-email {
+  position: relative;
+}
+
+.form__fieldset-contacts::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: url("../img/phone.svg") no-repeat 0 0;
+  top: 69px;
+  right: 20px;
+  z-index: 2;
+}
+
+.form__fieldset-contacts::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  background-color: #e6e6e6;
+  top: 49px;
+  right: 0;
+}
+
+.form__fieldset-email::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: url("../img/mail.svg") no-repeat 0 0;
+  top: 69px;
+  right: 20px;
+  z-index: 2;
+}
+
+.form__fieldset-email::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  background-color: #e6e6e6;
+  top: 44px;
+  right: 0;
 }
 
 .form__label {
@@ -94,8 +148,8 @@
 
 .form__fieldset-contacts .form__label {
   text-transform: @text-tr;
-  padding-left: 21px;
-  padding-top: 10px;
+  padding-left: 24px;
+  padding-top: 12px;
   padding-bottom: 7px;
 }
 
@@ -118,10 +172,10 @@
   font-weight: 700;
   line-height: 26px;
   padding-left: 20px;
-  padding-top: 20px;
-  padding-bottom: 15px;
+  padding-top: 17px;
+  padding-bottom: 12px;
   padding-right: 20px;
-  margin-top: 11px;
+  margin-top: 14px;
   background-color: #f2f2f2;
   border: none;
   outline: none;
@@ -138,10 +192,10 @@
 .form__textarea:focus {
   border: 4px solid #e5e5e5;
   background-color: #ffffff;
-  padding-left: 16px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-right: 16px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
 }
 
 .form__radio label,
@@ -191,11 +245,34 @@
   position: absolute;
   width: 22px;
   height: 13px;
-  border-left: 3px solid;
-  border-bottom: 3px solid;
+  border-left: 4px solid;
+  border-bottom: 4px solid;
   transform: rotate(-45deg);
   top: 4px;
   left: -16px;
+}
+
+.form__radio:hover label::before {
+  background-color: #e5e5e5;
+}
+
+.form__checkbox:hover label::before {
+  background-color: #e5e5e5;
+  border: 5px solid #e5e5e5;
+}
+
+.form__radio:active label::before {
+  background-color: #d5d5d5;
+}
+
+.form__checkbox:active label::before {
+  background-color: #d5d5d5;
+  border: 5px solid #d5d5d5;
+}
+
+.form__checkbox:active label::after,
+.form__radio:active label::after {
+  opacity: 0.3;
 }
 
 .form__radio:first-child {
@@ -227,6 +304,17 @@
 }
 
 @media (min-width: @tablet-width) {
+  .form::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 1px;
+    height: 292px;
+    background-color: #f2f2f2;
+    top: 54px;
+    left: 323px;
+  }
+
   .form__legend {
     font-size: 21px;
     font-weight: 700;
@@ -297,9 +385,35 @@
     padding-top: 16px;
   }
 
+  .form__fieldset-contacts::before {
+    top: 73px;
+  }
+
+  .form__fieldset-contacts::after {
+    top: 53px;
+  }
+
+  .form__fieldset-email::before {
+    top: 76px;
+  }
+
+  .form__fieldset-email::after {
+    top: 52px;
+  }
+
   .form__radio label::before {
     top: -13px;
     left: -29px;
+  }
+
+  .form__checkbox label::after {
+    top: 4px;
+    left: -14px;
+  }
+
+  .form__radio label::after {
+    top: 3px;
+    left: -13px;
   }
 
   .form__radio:first-child {
@@ -349,10 +463,20 @@
   .form__textarea {
     margin-top: 53px;
     padding-top: 18px;
+    padding-bottom: 17px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .form::before {
+    top: 36px;
+    left: 480px;
+  }
+
+  .form__field-wrapper {
+    margin-top: 0;
+  }
+
   .form__fieldset-name {
     padding-left: 80px;
   }
@@ -399,6 +523,16 @@
     margin-top: 73px;
   }
 
+  .form__fieldset-contacts::before {
+    top: 94px;
+    right: -39px;
+  }
+
+  .form__fieldset-contacts::after {
+    top: 73px;
+    right: -58px;
+  }
+
   .form__fieldset-email {
     flex-wrap: nowrap;
   }
@@ -414,7 +548,18 @@
     margin-top: 71px;
   }
 
+  .form__fieldset-email::before {
+    top: 97px;
+    right: -40px;
+  }
+
+  .form__fieldset-email::after {
+    top: 73px;
+    right: -59px;
+  }
+
   .form__radio label::before {
+    top: -16px;
     left: -28px;
   }
 
@@ -444,6 +589,11 @@
   .form__checkbox:last-child {
     padding-left: 69px;
     padding-top: 5px;
+  }
+
+  .form__radio label::after {
+    top: 0;
+    left: -11px;
   }
 
   .form__textarea {
