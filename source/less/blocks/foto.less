@@ -1,4 +1,5 @@
 .foto__list {
+  position: relative;
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -37,7 +38,7 @@
 .foto__image {
   width: 100%;
   height: 280px;
-  margin-top: 30px;
+  margin-top: 29px;
 }
 
 .foto__image-picture {
@@ -50,6 +51,20 @@
   text-transform: @text-tr;
 }
 
+.foto__item {
+  position: relative;
+}
+
+.foto__image::before {
+  content: "";
+  position: absolute;
+  background: url("../img/line-photo.svg") no-repeat 0 0;
+  width: 320px;
+  height: 1px;
+  top: 6px;
+  left: -19px;
+}
+
 @media (min-width: @tablet-width) {
   .foto__list {
     max-width: 648px;
@@ -60,6 +75,10 @@
 
   .foto__item {
     background-color: #f2f2f2;
+  }
+
+  .foto__image::before {
+    display: none;
   }
 
   .foto__item:first-child {
@@ -117,6 +136,10 @@
 
   .foto__item {
     position: relative;
+  }
+
+  .foto__image::before {
+    display: none;
   }
 
   .foto__item:first-child {

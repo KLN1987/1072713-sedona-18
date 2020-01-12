@@ -97,16 +97,29 @@
   border-right: 160px solid transparent;
 }
 
-/*.advantages__item::after {
-  content: " ";
+.advantages__item {
+  position: relative;
+}
+
+.advantages__text--road::before {
+  content: "";
   background: url("../img/line.svg") no-repeat 0 0;
   position: absolute;
-  bottom: 167px;
+  bottom: 146px;
   left: 20px;
   width: 280px;
   height: 1px;
-  opacity: 0.1;
-}*/
+}
+
+.advantages__text--tourists::before {
+  content: "";
+  background: url("../img/line.svg") no-repeat 0 0;
+  position: absolute;
+  bottom: 154px;
+  left: 20px;
+  width: 280px;
+  height: 1px;
+}
 
 @media (min-width: @tablet-width) {
   .advantages {

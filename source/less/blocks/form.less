@@ -1,10 +1,9 @@
-/*.form {
-  display: flex;
-  flex-direction: column;
-}*/
-
 .form__fieldset {
   border: none;
+}
+
+.form__list {
+  list-style: none;
 }
 
 .form__field-wrapper {
@@ -145,6 +144,60 @@
   padding-right: 16px;
 }
 
+.form__radio label,
+.form__checkbox label {
+  position: relative;
+}
+
+.form__radio label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  width: 53px;
+  height: 53px;
+  background-color: #f2f2f2;
+  top: -12px;
+  left: -31px;
+}
+
+.form__radio label::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #000000;
+  top: 5px;
+  left: -15px;
+}
+
+.form__checkbox label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 53px;
+  height: 53px;
+  border: 5px solid #f2f2f2;
+  background-color: #f2f2f2;
+  top: -12px;
+  left: -32px;
+}
+
+.form__checkbox label::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 22px;
+  height: 13px;
+  border-left: 3px solid;
+  border-bottom: 3px solid;
+  transform: rotate(-45deg);
+  top: 4px;
+  left: -16px;
+}
+
 .form__radio:first-child {
   margin-top: 32px;
 }
@@ -184,6 +237,7 @@
   .form__field-wrapper {
     flex-wrap: nowrap;
     max-width: 648px;
+    margin-top: 3px;
   }
 
   .form__fieldset-name {
