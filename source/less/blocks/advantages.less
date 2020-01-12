@@ -167,12 +167,10 @@
     font-size: 21px;
   }
 
-  /*.advantages__text {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }*/
+  .advantages__text--road::before,
+  .advantages__text--tourists::before {
+    display: none;
+  }
 
   .advantages__text--city {
     padding-top: 25px;
@@ -180,13 +178,6 @@
     padding-left: 47px;
     padding-right: 47px;
   }
-
-  /*.advantages__item--basic .advantages__text {
-    padding-top: 25px;
-    padding-bottom: 18px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }*/
 
   .advantages__text--bridge {
     padding-top: 24px;
@@ -320,6 +311,11 @@
 
   .advantages__text {
     padding: 31px 30px 35px 30px;
+  }
+
+  .advantages__text--road::before,
+  .advantages__text--tourists::before {
+    display: none;
   }
 
   .advantages__item--basic .advantages__text {
