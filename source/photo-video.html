@@ -154,6 +154,11 @@
           </div>
           <div class="video__display">
             <video class="video__player" poster="img/video-mobile@1x.jpg">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg">
+                <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg">
+                <img src="img/video-mobile@1x.jpg" width="320" height="201" alt="Видео">
+              </picture>
             </video>
             <div class="video__show">
               <div class="video__progress">
