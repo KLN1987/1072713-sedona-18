@@ -1,4 +1,5 @@
 .video__wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -16,6 +17,16 @@
   padding-right: 24px;
 }
 
+.video__header::before {
+  content: "";
+  position: absolute;
+  background: url("../img/line-photo.svg") no-repeat 0 0;
+  width: 320px;
+  height: 1px;
+  top: 6px;
+  left: 0;
+}
+
 .video__header h2 {
   font-size: 18px;
   font-weight: 700;
@@ -29,6 +40,12 @@
 
 .video__display {
   position: relative;
+}
+
+.video__image {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .video__show {
@@ -73,12 +90,12 @@
 }
 
 .video__start {
-  margin-left: 24px;
-  margin-top: 22px;
+  margin-left: 17px;
+  margin-top: 21px;
   width: 23px;
   height: 23px;
-  background: url("../img/icon-video-replay.svg") no-repeat 0 0;
   border: none;
+  background-color: #f2f2f2;
 }
 
 .video__titers {
@@ -86,8 +103,8 @@
   margin-top: 23px;
   width: 32px;
   height: 20px;
-  background: url("../img/icon-video-subtitles.svg") no-repeat 0 0;
   border: none;
+  background-color: #f2f2f2;
 }
 
 .video__full-screen {
@@ -95,9 +112,36 @@
   margin-left: 31px;
   width: 20px;
   height: 20px;
-  background: url("../img/icon-video-fullscreen.svg") no-repeat 0 0;
   border: none;
+  background-color: #f2f2f2;
 }
+
+.video__start:hover,
+.video__titers:hover {
+  path {
+    fill: #333333;
+  }
+}
+
+.video__full-screen:hover {
+  polygon {
+    fill: #333333;
+  }
+}
+
+.video__start:active,
+.video__titers:active {
+  path {
+    fill: rgba(51, 51, 51, 0.3);
+  }
+}
+
+.video__full-screen:active {
+  polygon {
+    fill: rgba(51, 51, 51, 0.3);
+  }
+}
+
 
 @media (min-width: @tablet-width) {
   .video__wrapper {
@@ -106,9 +150,9 @@
   }
 
   .video__header {
-    padding-top: 40px;
+    padding-top: 43px;
     text-transform: uppercase;
-    padding-bottom: 20px;
+    padding-bottom: 48px;
     padding-left: 105px;
     padding-right: 105px;
   }
@@ -118,6 +162,10 @@
     font-weight: 700;
     line-height: 26px;
     margin-bottom: 32px;
+  }
+
+  .video__header p {
+    margin-top: -3px;
   }
 
   .video__display {
@@ -130,7 +178,7 @@
     display: block;
     width: 100%;
     height: 499px;
-    margin-bottom: 50px;
+    margin-bottom: 21px;
   }
 
   .video__show {
@@ -140,11 +188,19 @@
     width: 100%;
   }
 
+  .video__image {
+    width: 648px;
+    height: 499px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+  }
+
   .video__contorls {
     width: 100%;
     position: absolute;
     left: 0;
-    bottom: -2px;
+    bottom: 0;
     background: #000000;
     opacity: 0.6;
     height: 93px;
@@ -169,22 +225,60 @@
   }
 
   .video__start {
-    margin-left: 35px;
-    margin-top: 34px;
+    margin-left: 27px;
+    margin-top: 27px;
     padding: 8px;
-    background: url("../img/icon-video-replay-white.svg") no-repeat 0 0;
+    background-color: rgba(0, 0, 0, 0);
+
+    path {
+      fill: #ffffff;
+    }
   }
 
   .video__titers {
     margin-top: 34px;
     margin-left: 466px;
-    background: url("../img/icon-video-subtitles-white.svg");
+    background-color: rgba(0, 0, 0, 0);
+
+    path {
+      fill: #ffffff;
+    }
   }
 
   .video__full-screen {
     margin-top: 35px;
     margin-right: 40px;
-    background: url("../img/icon-video-fullscreen-white.svg");
+    background-color: rgba(0, 0, 0, 0);
+
+    polygon {
+      fill: #ffffff;
+    }
+  }
+
+  .video__start:hover,
+  .video__titers:hover {
+    path {
+      fill: rgba(251, 251, 251, 0.6);
+    }
+  }
+
+  .video__full-screen:hover {
+    polygon {
+      fill: rgba(251, 251, 251, 0.6);
+    }
+  }
+
+  .video__start:active,
+  .video__titers:active {
+    path {
+      fill: rgba(251, 251, 251, 0.3);
+    }
+  }
+
+  .video__full-screen:active {
+    polygon {
+      fill: rgba(251, 251, 251, 0.3);
+    }
   }
 }
 
@@ -215,6 +309,19 @@
   .video__header {
     padding-left: 180px;
     padding-right: 180px;
-    padding-top: 42px;
+    padding-top: 47px;
+    padding-bottom: 66px;
+  }
+
+  .video__player {
+    margin-bottom: -1px;
+  }
+
+  .video__image {
+    width: 800px;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 }
