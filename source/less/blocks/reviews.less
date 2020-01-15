@@ -1,11 +1,12 @@
 .reviews {
   max-width: 320px;
   margin: 0 auto;
+  position: relative;
 }
 
 .reviews__send {
   text-align: center;
-  margin-bottom: 4px;
+  margin-bottom: 2px;
 }
 
 .reviews__btn {
@@ -43,6 +44,30 @@
   margin-top: 35px;
 }
 
+.reviews__emotions .form__legend {
+  padding-top: 3px;
+}
+
+.reviews__emotions::before {
+  content: "";
+  position: absolute;
+  background: url("../img/line-photo.svg") no-repeat 0 0;
+  width: 320px;
+  height: 1px;
+  top: -16px;
+  left: 0;
+}
+
+.reviews__impressions::before {
+  content: "";
+  position: absolute;
+  background: url("../img/line-photo.svg") no-repeat 0 0;
+  width: 320px;
+  height: 1px;
+  top: 573px;
+  left: 0;
+}
+
 @media (min-width: @tablet-width) {
   .reviews {
     max-width: 768px;
@@ -71,6 +96,10 @@
   .reviews__impressions {
     order: -1;
     padding: 0;
+  }
+
+  .reviews__impressions::before {
+    display: none;
   }
 
   .reviews__impressions .form__legend {
@@ -216,7 +245,7 @@
   .reviews__impressions {
     margin: 0;
     padding: 0;
-    margin-top: 23px;
+    margin-top: 20px;
   }
 
   .reviews__impressions .form__legend {
@@ -225,7 +254,7 @@
 
   .reviews__present .form__legend {
     padding-right: 159px;
-    padding-top: 31px;
+    padding-top: 29px;
   }
 
   .reviews__impressions .form__list {
@@ -276,14 +305,14 @@
   }
 
   .reviews__send {
-    margin-top: 52px;
+    margin-top: 58px;
     margin-bottom: 19px;
   }
 
   .reviews__btn {
     padding-left: 148px;
     padding-right: 148px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 }
