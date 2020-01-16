@@ -1,15 +1,19 @@
 .reviews {
   max-width: 320px;
   margin: 0 auto;
+  position: relative;
 }
 
 .reviews__send {
   text-align: center;
+  margin-bottom: 2px;
 }
 
 .reviews__btn {
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 47px;
+  padding-right: 49px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   margin-top: 43px;
 }
 
@@ -22,6 +26,7 @@
 }
 
 .reviews__contacts {
+  position: relative;
   margin-top: 34px;
 }
 
@@ -30,11 +35,37 @@
 }
 
 .reviews__attractions {
+  position: relative;
   margin-top: 36px;
 }
 
 .reviews__emotions {
+  position: relative;
   margin-top: 35px;
+}
+
+.reviews__emotions .form__legend {
+  padding-top: 3px;
+}
+
+.reviews__emotions::before {
+  content: "";
+  position: absolute;
+  background: url("../img/line-photo.svg") no-repeat 0 0;
+  width: 320px;
+  height: 1px;
+  top: -16px;
+  left: 0;
+}
+
+.reviews__impressions::before {
+  content: "";
+  position: absolute;
+  background: url("../img/line-photo.svg") no-repeat 0 0;
+  width: 320px;
+  height: 1px;
+  top: 573px;
+  left: 0;
 }
 
 @media (min-width: @tablet-width) {
@@ -52,27 +83,141 @@
   }
 
   .reviews__present {
-    width: 100%;
+    width: 50%;
+    padding: 0;
     margin: 0;
   }
 
   .reviews__present .form__legend {
-    padding-top: 45px;
-    padding-right: 50px;
+    padding-top: 48px;
+    padding-right: 45px;
   }
 
   .reviews__impressions {
     order: -1;
+    padding: 0;
   }
 
-  .reviews__present:first-child {
-    width: 50%;
+  .reviews__impressions::before {
+    display: none;
+  }
+
+  .reviews__impressions .form__legend {
+    margin-left: -9px;
+    padding-top: 9px;
+  }
+
+  .reviews__contacts {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-top: 57px;
+  }
+
+  .reviews__contacts::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 125px;
+    height: 1px;
+    background-color: #e6e6e6;
+    top: 21px;
+    left: 0;
+  }
+
+  .reviews__contacts::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 125px;
+    height: 1px;
+    background-color: #e6e6e6;
+    top: 21px;
+    right: 0;
+  }
+
+  .reviews__contacts .form__legend {
+    margin: 0 auto;
+    padding-top: 10px;
+  }
+
+  .reviews__attractions {
+    width: 100%;
+    margin-top: 34px;
+  }
+
+  .reviews__attractions::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 125px;
+    height: 1px;
+    background-color: #e6e6e6;
+    top: 45px;
+    left: -2px;
+  }
+
+  .reviews__attractions::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 125px;
+    height: 1px;
+    background-color: #e6e6e6;
+    top: 45px;
+    right: -2px;
+  }
+
+  .reviews__attractions .form__legend {
+    padding-top: 19px;
+    padding-left: 165px;
+    padding-right: 165px;
+  }
+
+  .reviews__attractions .form__list {
+    max-width: 470px;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .reviews__emotions {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 74px;
+  }
+
+  .reviews__emotions::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 125px;
+    height: 1px;
+    background-color: #e6e6e6;
+    top: 12px;
+    left: 0;
+  }
+
+  .reviews__emotions::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 125px;
+    height: 1px;
+    background-color: #e6e6e6;
+    top: 12px;
+    right: 0;
   }
 
   .reviews__send {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-top: 57px;
+    margin-bottom: 20px;
+    align-items: flex-end;
   }
 
   .reviews__necessary {
@@ -81,8 +226,8 @@
   }
 
   .reviews__btn {
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 66px;
+    padding-right: 76px;
     margin: 0;
   }
 }
@@ -100,10 +245,74 @@
   .reviews__impressions {
     margin: 0;
     padding: 0;
-    margin-top: 46px;
+    margin-top: 20px;
   }
 
   .reviews__impressions .form__legend {
-    margin-left: -4px;
+    margin-left: 157px;
+  }
+
+  .reviews__present .form__legend {
+    padding-right: 159px;
+    padding-top: 29px;
+  }
+
+  .reviews__impressions .form__list {
+    padding-left: 44px;
+  }
+
+  .reviews__contacts {
+    margin-top: 56px;
+  }
+
+  .reviews__contacts::before,
+  .reviews__contacts::after,
+  .reviews__attractions::before,
+  .reviews__attractions::after,
+  .reviews__emotions::before,
+  .reviews__emotions::after {
+    width: 282px;
+  }
+
+  .reviews__attractions {
+    margin: 0;
+    padding: 0;
+    margin-top: 36px;
+  }
+
+  .reviews__attractions::before,
+  .reviews__attractions::after {
+    top: 42px;
+  }
+
+  .reviews__attractions .form__legend {
+    padding-top: 17px;
+    padding-left: 307px;
+    padding-right: 307px;
+  }
+
+  .reviews__attractions .form__list {
+    max-width: 960px;
+    flex-wrap: nowrap;
+  }
+
+  .reviews__emotions {
+    margin-top: 81px;
+  }
+
+  .reviews__emotions .form__field-wrapper {
+    max-width: 960px;
+  }
+
+  .reviews__send {
+    margin-top: 58px;
+    margin-bottom: 19px;
+  }
+
+  .reviews__btn {
+    padding-left: 148px;
+    padding-right: 148px;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 }

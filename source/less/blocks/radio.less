@@ -6,3 +6,11 @@
   text-transform: none;
   padding-left: 46px;
 }
+
+.radio input[type="radio"] + label::after {
+  content: none;
+}
+
+.radio input[type="radio"]:checked + label::after {
+  content: "";
+}

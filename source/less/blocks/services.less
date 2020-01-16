@@ -8,14 +8,22 @@
 
 .services__item {
   text-align: left;
-  padding-top: 35px;
-  padding-right: 30px;
   padding-left: 70px;
+}
+
+.services__description {
+  line-height: 21px;
+  margin: 0;
+  margin-bottom: 7px;
+}
+
+.services__item--hotel .services__title {
+  padding-top: 35px;
 }
 
 .services__item--hotel .services__description {
   margin-bottom: -21px;
-  margin-top: 6px;
+  margin-top: 14px;
 }
 
 .services__item--hotel::before {
@@ -30,11 +38,11 @@
 }
 
 .services__item--souvenir {
-  margin-top: 7px;
+  margin-top: 49px;
 }
 
 .services__item--souvenir .services__description {
-  margin-top: 10px;
+  margin-top: 14px;
 }
 
 .services__item--souvenir::before {
@@ -48,9 +56,15 @@
   background-size: cover;
 }
 
-.services__item--food {
-  margin-top: -16px;
-  margin-bottom: 33px;
+.services__item--food .services__title {
+  padding-top: 21px;
+}
+
+.services__item--food .services__description {
+  padding-right: 23px;
+  padding-top: 15px;
+  padding-bottom: 31px;
+  line-height: 21px;
 }
 
 .services__item--food::before {
@@ -71,11 +85,6 @@
   margin: 0;
 }
 
-.services__description {
-  margin: 0;
-  margin-bottom: 7px;
-}
-
 @media (min-width: @tablet-width) {
   .services__list {
     width: 100%;
@@ -85,35 +94,32 @@
 
   .services__item {
     padding: 0;
-    padding-top: 140px;
-    padding-bottom: 28px;
+    margin: 0;
+    width: 33%;
+    padding-top: 92px;
     text-align: center;
+    margin-bottom: 23px;
   }
 
   .services__title {
     font-size: 21px;
   }
 
-  .services__description {
-    margin: 0;
-    margin-top: 18px;
-  }
-
   .services__item--hotel .services__title {
-    margin-top: 19px;
+    margin-top: 32px;
   }
 
   .services__item--hotel .services__description {
     margin-top: 22px;
-    padding-left: 45px;
-    padding-right: 56px;
+    padding-left: 46px;
+    padding-right: 42px;
     line-height: 20px;
   }
 
   .services__item--hotel::before {
     content: "";
     position: absolute;
-    top: 58px;
+    top: 60px;
     left: 90px;
     width: 75px;
     height: 72px;
@@ -126,14 +132,15 @@
   }
 
   .services__item--souvenir .services__title {
-    margin-top: 11px;
-    padding-right: 40px;
+    margin-top: 68px;
+    padding-left: 12px;
   }
 
   .services__item--souvenir .services__description {
     margin-top: 20px;
     line-height: 21px;
-    padding-right: 44px;
+    padding-right: 35px;
+    padding-left: 49px;
   }
 
   .services__item--souvenir::before {
@@ -148,21 +155,21 @@
   }
 
   .services__item--food .services__title {
-    margin-top: 35px;
-    padding-right: 53px;
+    margin-top: 48px;
+    padding-left: 7px;
   }
 
   .services__item--food .services__description {
     line-height: 21px;
-    padding-left: 36px;
-    padding-right: 94px;
-    margin-top: 21px;
+    padding-left: 53px;
+    padding-right: 44px;
+    margin-top: 5px;
   }
 
   .services__item--food::before {
     content: "";
     position: absolute;
-    top: 59px;
+    top: 63px;
     left: 345px;
     width: 77px;
     height: 68px;
@@ -179,8 +186,10 @@
   }
 
   .services__item {
-    padding-top: 149px;
-    padding-bottom: 10px;
+    width: 33%;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 4px;
   }
 
   .services__title {
@@ -204,8 +213,12 @@
   }
 
   .services__item--hotel .services__title {
-    margin-top: 12px;
-    padding-left: 34px;
+    margin-top: 123px;
+    margin-left: 25px;
+  }
+
+  .services__item--hotel .services__description {
+    padding-left: 45px;
   }
 
   .services__item--souvenir::before {
@@ -220,13 +233,13 @@
   }
 
   .services__item--souvenir .services__title {
-    margin-top: 4px;
-    padding-left: 79px;
+    margin-top: 158px;
+    padding-left: 44px;
   }
 
   .services__item--souvenir .services__description {
-    padding-left: 140px;
-    padding-right: 71px;
+    padding-left: 90px;
+    padding-right: 70px;
   }
 
   .services__item--food::before {
@@ -241,12 +254,12 @@
   }
 
   .services__item--food .services__title {
-    margin-top: 26px;
-    padding-left: 104px;
+    margin-top: 138px;
+    padding-left: 35px;
   }
 
   .services__item--food .services__description {
-    padding-left: 67px;
-    padding-right: 19px;
+    padding-left: 56px;
+    padding-right: 45px;
   }
 }

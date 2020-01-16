@@ -1,4 +1,30 @@
+.foto-intro {
+  position: relative;
+  background: url("../img/back-desktop.jpg") no-repeat;
+  height: 157px;
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.foto-intro__text {
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+.foto-intro__body {
+  position: relative;
+  color: #333333;
+  max-width: 320px;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 37px;
+  padding-bottom: 11px;
+  line-height: 24px;
+}
+
 .foto__list {
+  position: relative;
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -6,26 +32,6 @@
   padding: 0;
   max-width: 280px;
 }
-
-/*.foto__sunset {
-  background: url("../img/photo-sunset-mobile@1x.jpg") no-repeat 0 0;
-  height: 280px;
-}
-
-.foto__cactus {
-  background: url("../img/photo-cactus-mobile@1x.jpg") no-repeat 0 0;
-  height: 280px;
-}
-
-.foto__roads {
-  background: url("../img/photo-roads-mobile@1x.jpg") no-repeat 0 0;
-  height: 280px;
-}
-
-.foto__bridge {
-  background: url("../img/photo-bridge-mobile@1x.jpg") no-repeat 0 0;
-  height: 280px;
-}*/
 
 .foto__title {
   text-transform: @text-tr;
@@ -45,8 +51,7 @@
 }
 
 .foto__btn-like {
-  /*float: left;*/
-  margin-right: 14px;
+  margin-right: 10px;
   width: 23px;
   height: 21px;
   outline: none;
@@ -56,18 +61,75 @@
 }
 
 .foto__image {
+  width: 100%;
   height: 280px;
-  background-color: red;
-  margin-top: 30px;
+  margin-top: 29px;
+}
+
+.foto__image-picture {
+  width: 100%;
 }
 
 .foto__quantity-like {
   font-weight: 700;
   line-height: 24px;
   text-transform: @text-tr;
+  margin-top: 17px;
+  margin-left: 5px;
+  margin-bottom: 11px;
+}
+
+.foto__item {
+  position: relative;
+}
+
+.foto__image::before {
+  content: "";
+  position: absolute;
+  background: url("../img/line-photo.svg") no-repeat 0 0;
+  width: 320px;
+  height: 1px;
+  top: 6px;
+  left: -19px;
 }
 
 @media (min-width: @tablet-width) {
+  .foto-intro {
+    height: 289px;
+  }
+
+  .foto-intro__body h1 {
+    font-size: 30px;
+  }
+
+  .foto-intro__text {
+    margin-top: 94px;
+    margin-bottom: 25px;
+  }
+
+  .foto-intro__body {
+    position: relative;
+    color: #333333;
+    margin: 0 auto;
+    max-width: 768px;
+    padding-left: 162px;
+    padding-right: 164px;
+    padding-top: 37px;
+    padding-bottom: 28px;
+    margin-top: 38px;
+  }
+
+  .foto-intro__body::before {
+    content: "";
+    position: absolute;
+    top: -92px;
+    left: 0;
+    margin: auto;
+    background: url("../img/bg-intro-triangle-tablet.svg") no-repeat 0 0;
+    height: 57px;
+    width: 100%;
+  }
+
   .foto__list {
     max-width: 648px;
     display: flex;
@@ -77,6 +139,10 @@
 
   .foto__item {
     background-color: #f2f2f2;
+  }
+
+  .foto__image::before {
+    display: none;
   }
 
   .foto__item:first-child {
@@ -94,7 +160,6 @@
 
   .foto__image:first-child {
     height: 400px;
-    background-color: red;
     margin: 0;
   }
 
@@ -112,6 +177,10 @@
     margin-top: 13px;
   }
 
+  .foto__btn-like {
+    margin-right: 4px;
+  }
+
   .foto__item:nth-child(n+2) .foto__like {
     margin-right: 28px;
     margin-top: 13px;
@@ -124,25 +193,42 @@
     padding-bottom: 15px;
   }
 
-  /*.foto__sunset {
-    background: url("../img/photo-sunset-tablet@1x.jpg") no-repeat 0 0;
-    background-size: cover;
+  .foto__roads .foto__quantity-like {
+    margin-right: 8px;
   }
-
-  .foto__cactus {
-    background: url("../img/photo-cactus-tablet@1x.jpg") no-repeat 0 0;
-  }
-
-  .foto__roads {
-    background: url("../img/photo-roads-tablet@1x.jpg") no-repeat 0 0;
-  }
-
-  .foto__bridge {
-    background: url("../img/photo-bridge-tablet@1x.jpg") no-repeat 0 0;
-  }*/
 }
 
 @media (min-width: @desktop-width) {
+  .foto-intro__text {
+    margin-top: 102px;
+  }
+
+  .foto-intro {
+    height: 300px;
+    background-position: center bottom;
+  }
+
+  .foto-intro__body {
+    max-width: 1200px;
+    padding-left: 378px;
+    padding-right: 378px;
+    padding-top: 37px;
+    padding-bottom: 28px;
+  }
+
+  .foto-intro__body::before {
+    content: "";
+    position: absolute;
+    top: -94px;
+    left: 0;
+    background: url("../img/intro-triangle.svg") no-repeat 0 0;
+    height: 57px;
+  }
+
+  .foto-intro__body h1 {
+    margin-top: 36px;
+  }
+
   .foto__list {
     max-width: 1200px;
     display: flex;
@@ -152,6 +238,10 @@
 
   .foto__item {
     position: relative;
+  }
+
+  .foto__image::before {
+    display: none;
   }
 
   .foto__item:first-child {
@@ -164,6 +254,7 @@
 
   .foto__menu {
     position: absolute;
+    padding: 0;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -175,35 +266,39 @@
   }
 
   .foto__discription {
-    margin-left: 20px;
+    padding-left: 2px;
+    padding-bottom: 15px;
   }
 
   .foto__like {
     margin-right: 20px;
   }
 
-  /*.foto__sunset {
-    background: url("../img/photo-sunset-desktop@1x.jpg") no-repeat 0 0;
-    background-size: cover;
-  }
-
-  .foto__cactus {
-    background: url("../img/photo-cactus-desktop@1x.jpg") no-repeat 0 0;
-    background-size: cover;
-  }
-
-  .foto__roads {
-    background: url("../img/photo-roads-desktop@1x.jpg") no-repeat 0 0;
-    background-size: cover;
-  }
-
-  .foto__bridge {
-    background: url("../img/photo-bridge-desktop@1x.jpg") no-repeat 0 0;
-    background-size: cover;
-  }*/
-
   .foto__btn-like {
     background: url("../img/icon-like-white.svg") no-repeat 0 0;
     opacity: 1;
+  }
+
+  .foto__sunset .foto__btn-like {
+    margin-top: -18px;
+    margin-right: 5px;
+  }
+
+  .foto__cactus .foto__btn-like,
+  .foto__roads .foto__btn-like,
+  .foto__bridge .foto__btn-like {
+    margin-top: -14px;
+    margin-right: 5px;
+  }
+
+  .foto__sunset .foto__quantity-like,
+  .foto__cactus .foto__quantity-like,
+  .foto__bridge .foto__quantity-like {
+    margin-top: 0;
+  }
+
+  .foto__roads .foto__quantity-like {
+    margin-top: 3px;
+    margin-right: 9px;
   }
 }

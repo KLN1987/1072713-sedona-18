@@ -1,13 +1,28 @@
 .map {
   max-width: 320px;
   margin: 0 auto;
-  margin-top: 70px;
+  margin-top: 64px;
+  margin-bottom: 7px;
+}
+
+.map__interactive {
+  display: block;
+}
+
+.map__interactive-image {
+  width: 100%;
 }
 
 @media (min-width: @tablet-width) {
-  max-width: 768px;
+  .map {
+    max-width: 768px;
+    margin-top: 73px;
+  }
 }
 
 @media (min-width: @desktop-width) {
-  max-width: 1200px;
+  .map {
+    max-width: 1200px;
+    margin-top: 80px;
+  }
 }
