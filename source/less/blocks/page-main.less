@@ -11,11 +11,16 @@
 
 .page-main__intro-header {
   position: relative;
-  background: url("../img/back-desktop.jpg");
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   height: 389px;
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
+
+  @media (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: cover;
+  }
 }
 
 .page-main__intro-image {
@@ -88,11 +93,16 @@
 
   .page-main__intro-header {
     position: relative;
-    background: url("../img/back-desktop.jpg");
+    background: url("../img/bg-back-tablet@1x.jpg");
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
     height: 518px;
+
+    @media (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 768px auto;
+    }
   }
 
   .page-main__intro-body {
@@ -125,6 +135,11 @@
     position: relative;
     background: url("../img/bg-back-desktop@1x.jpg") no-repeat 0 0;
     width: 100%;
+
+    @media (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-desktope@2x.jpg");
+      background-size: 1200px auto;
+    }
   }
 
   .page-main__intro-body {

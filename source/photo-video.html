@@ -9,6 +9,10 @@
     href="https://fonts.googleapis.com/css?family=PT+Sans:400,700,700i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext"
     rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <script>
+    document.createElement("picture");
+  </script>
+  <script src="picturefill.js" async></script>
 </head>
 
 <body>
@@ -42,7 +46,7 @@
           <picture>
             <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
-            <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="282" height="214"
+            <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="280" height="215"
               alt="Логотип Седона">
           </picture>
         </a>
@@ -69,9 +73,9 @@
             <li class="foto__item">
               <div class="foto__image">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg">
-                  <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg">
-                  <img class="foto__image-picture" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280"
+                  <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+                  <img class="foto__image-picture" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280"
                     alt="Просторы">
                 </picture>
               </div>
@@ -89,9 +93,9 @@
             <li class="foto__item">
               <div class="foto__image">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg">
-                  <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg">
-                  <img src="img/photo-cactus-mobile@1x.jpg" width="400" height="267" alt="Кактус">
+                  <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+                  <img src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" width="400" height="267" alt="Кактус">
                 </picture>
               </div>
               <div class="foto__menu foto__cactus">
@@ -108,9 +112,9 @@
             <li class="foto__item">
               <div class="foto__image">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg">
-                  <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg">
-                  <img src="img/photo-roads-mobile@1x.jpg" width="400" height="267" alt="Дорога">
+                  <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+                  <img src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" width="400" height="267" alt="Дорога">
                 </picture>
               </div>
               <div class="foto__menu foto__roads">
@@ -127,9 +131,9 @@
             <li class="foto__item">
               <div class="foto__image">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg">
-                  <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg">
-                  <img src="img/photo-bridge-mobile@1x.jpg" width="400" height="267" alt="Мост">
+                  <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                  <img src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" width="400" height="267" alt="Мост">
                 </picture>
               </div>
               <div class="foto__menu foto__bridge">
@@ -157,9 +161,9 @@
               </video>
               <div class="video__picture">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg">
-                  <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg">
-                  <img class="video__image" src="img/video-mobile@1x.jpg" width="320" height="201" alt="Видео">
+                  <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, mg/video-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+                  <img class="video__image" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" width="320" height="201" alt="Видео">
                 </picture>
               </div>
               <div class="video__show">
@@ -233,10 +237,6 @@
   </div>
 
   <script src="js/main-nav.js"></script>
-  <script>
-    document.createElement("picture");
-  </script>
-  <script src="picturefill.js" async></script>
 
 </body>
 
