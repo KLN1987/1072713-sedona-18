@@ -12,7 +12,7 @@
   <script>
     document.createElement("picture");
   </script>
-  <script src="picturefill.js" async></script>
+  <script src="js/picturefill.min.js" async></script>
 </head>
 
 <body>
@@ -22,7 +22,7 @@
       <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__btn"><span class="visually-hidden">Меню</span>
         </button>
-        <div class="main-nav__wrapper">
+        <div class="main-nav__wrapper site-list">
           <ul class="main-nav__list site-list__right">
             <li class="site-list__item">
               <a href="index.html">Главная</a>
@@ -56,11 +56,11 @@
     <main class="page-main">
 
       <section class="page-main__intro">
-        <div class="page-main__intro-header foto-intro">
-          <img class="page-main__intro-image foto-intro__text" src="img/text-sedona.svg" width="229" height="39"
+        <div class="page-main__intro-header-inner">
+          <img class="page-main__intro-image-inner" src="img/text-sedona.svg" width="229" height="39"
             alt="Приветсвие!">
         </div>
-        <div class="page-main__intro-body foto-intro__body">
+        <div class="page-main__intro-body-inner">
           <h1 class="page-main__title heading-primary">Фото и видео</h1>
           <p class="page-main__description">Не можете решиться на путешествие из-за курса?
             Фотографии помогут вам забыть о политике и экономике.</p>
@@ -161,7 +161,7 @@
               </video>
               <div class="video__picture">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, mg/video-desktop@2x.jpg 2x">
+                  <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
                   <img class="video__image" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" width="320" height="201" alt="Видео">
                 </picture>
@@ -203,7 +203,7 @@
 
 
     <footer class="page-footer">
-      <div class="page-footer__wrapper page-footer__inner">
+      <div class="page-footer__wrapper page-footer__inner social">
         <div class="social__header">
           <p class="social__title">#VISITSEDONA</p>
         </div>
