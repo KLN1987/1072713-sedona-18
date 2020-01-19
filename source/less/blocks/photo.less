@@ -1,4 +1,4 @@
-.foto__list {
+.photo__list {
   position: relative;
   list-style: none;
   display: flex;
@@ -8,24 +8,24 @@
   max-width: 280px;
 }
 
-.foto__title {
+.photo__title {
   text-transform: @text-tr;
   font-weight: 700;
   line-height: 24px;
   margin-bottom: 0;
 }
 
-.foto__author {
+.photo__author {
   margin: 0;
 }
 
-.foto__like {
+.photo__like {
   display: flex;
   align-items: center;
   margin-top: -10px;
 }
 
-.foto__btn-like {
+.photo__btn-like {
   margin-right: 10px;
   width: 23px;
   height: 21px;
@@ -35,17 +35,17 @@
   opacity: 0.3;
 }
 
-.foto__image {
+.photo__image {
   width: 100%;
   height: 280px;
   margin-top: 29px;
 }
 
-.foto__image-picture {
+.photo__image-picture {
   width: 100%;
 }
 
-.foto__quantity-like {
+.photo__quantity-like {
   font-weight: 700;
   line-height: 24px;
   text-transform: @text-tr;
@@ -54,11 +54,11 @@
   margin-bottom: 11px;
 }
 
-.foto__item {
+.photo__item {
   position: relative;
 }
 
-.foto__image::before {
+.photo__image::before {
   content: "";
   position: absolute;
   background: url("../img/line-photo.svg") no-repeat 0 0;
@@ -69,99 +69,99 @@
 }
 
 @media (min-width: @tablet-width) {
-  .foto__list {
+  .photo__list {
     max-width: 648px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
   }
 
-  .foto__item {
+  .photo__item {
     background-color: #f2f2f2;
   }
 
-  .foto__image::before {
+  .photo__image::before {
     display: none;
   }
 
-  .foto__item:first-child {
+  .photo__item:first-child {
     width: 100%;
     margin-top: 42px;
   }
 
-  .foto__item:nth-child(n+2) {
+  .photo__item:nth-child(n+2) {
     width: 50%;
   }
 
-  .foto__item:nth-child(2n+1) {
+  .photo__item:nth-child(2n+1) {
     background-color: #eaeaea;
   }
 
-  .foto__image:first-child {
+  .photo__image:first-child {
     height: 400px;
     margin: 0;
   }
 
-  .foto__item:nth-child(n+2) .foto__image {
+  .photo__item:nth-child(n+2) .photo__image {
     height: 267px;
     margin: 0;
   }
 
-  .foto__discription {
+  .photo__discription {
     margin-left: 20px;
   }
 
-  .foto__like {
+  .photo__like {
     margin-right: 20px;
     margin-top: 13px;
   }
 
-  .foto__btn-like {
+  .photo__btn-like {
     margin-right: 4px;
   }
 
-  .foto__item:nth-child(n+2) .foto__like {
+  .photo__item:nth-child(n+2) .photo__like {
     margin-right: 28px;
     margin-top: 13px;
   }
 
-  .foto__menu {
+  .photo__menu {
     display: flex;
     justify-content: space-between;
     align-content: center;
     padding-bottom: 15px;
   }
 
-  .foto__roads .foto__quantity-like {
+  .photo__roads .photo__quantity-like {
     margin-right: 8px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .foto__list {
+  .photo__list {
     max-width: 1200px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
   }
 
-  .foto__item {
+  .photo__item {
     position: relative;
   }
 
-  .foto__image::before {
+  .photo__image::before {
     display: none;
   }
 
-  .foto__item:first-child {
+  .photo__item:first-child {
     width: 100%;
   }
 
-  .foto__item:nth-child(n+2) {
+  .photo__item:nth-child(n+2) {
     width: 33.3334%;
   }
 
-  .foto__menu {
+  .photo__menu {
     position: absolute;
     padding: 0;
     bottom: 0;
@@ -174,39 +174,39 @@
     color: #ffffff;
   }
 
-  .foto__discription {
+  .photo__discription {
     padding-left: 2px;
     padding-bottom: 15px;
   }
 
-  .foto__like {
+  .photo__like {
     margin-right: 20px;
   }
 
-  .foto__btn-like {
+  .photo__btn-like {
     background: url("../img/icon-like-white.svg") no-repeat 0 0;
     opacity: 1;
   }
 
-  .foto__sunset .foto__btn-like {
+  .photo__sunset .photo__btn-like {
     margin-top: -18px;
     margin-right: 5px;
   }
 
-  .foto__cactus .foto__btn-like,
-  .foto__roads .foto__btn-like,
-  .foto__bridge .foto__btn-like {
+  .photo__cactus .photo__btn-like,
+  .photo__roads .photo__btn-like,
+  .photo__bridge .photo__btn-like {
     margin-top: -14px;
     margin-right: 5px;
   }
 
-  .foto__sunset .foto__quantity-like,
-  .foto__cactus .foto__quantity-like,
-  .foto__bridge .foto__quantity-like {
+  .photo__sunset .photo__quantity-like,
+  .photo__cactus .photo__quantity-like,
+  .photo__bridge .photo__quantity-like {
     margin-top: 0;
   }
 
-  .foto__roads .foto__quantity-like {
+  .photo__roads .photo__quantity-like {
     margin-top: 3px;
     margin-right: 9px;
   }
