@@ -3,10 +3,39 @@
   margin: 0 auto;
   margin-top: 64px;
   margin-bottom: 7px;
+  position: relative;
+}
+
+.map::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  width: 27px;
+  height: 27px;
+  background-color: #ffffff;
+  top: 161px;
+  left: 146px;
+  z-index: 2;
+}
+
+.map::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  width: 17px;
+  height: 17px;
+  background-color: #81b4d4;
+  top: 166px;
+  left: 151px;
+  z-index: 2;
 }
 
 .map__interactive {
   display: block;
+  position: relative;
+  height: 350px;
 }
 
 .map__interactive-image {
@@ -18,11 +47,31 @@
     max-width: 768px;
     margin-top: 73px;
   }
+
+  .map::before {
+    top: 165px;
+    left: 370px;
+  }
+
+  .map::after {
+    top: 170px;
+    left: 375px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .map {
     max-width: 1200px;
     margin-top: 80px;
+  }
+
+  .map::before {
+    top: 163px;
+    left: 586px;
+  }
+
+  .map::after {
+    top: 168px;
+    left: 591px;
   }
 }
