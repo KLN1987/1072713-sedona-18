@@ -1,5 +1,5 @@
 .modal {
-  display: block;
+  display: none;
   position: fixed;
   max-width: 320px;
   height: 323px;
@@ -9,59 +9,26 @@
   z-index: 5;
   left: 0;
   right: 0;
-  top: 50%;
+  top: 180px;
   transform: translateY(-50%);
-  padding: 49px 20px 33px 20px;
 }
 
-.modal h2 {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 18px;
-}
-
-.modal p {
-  margin-bottom: 40px;
-}
-
-.modal__footer {
-  background-color: #f2f2f2;
-  width: 100%;
-  padding: 0;
-}
-
-.modal__footer-btn {
-  width: 100%;
-  padding: 22px 23px;
-  margin: 0;
-}
-
-/*
 .modal--bug {
   height: 280px;
-  display: block;
 }
 
 .modal__content {
-  margin: 0 auto;
-  padding-top: 49px;
   text-align: center;
   text-transform: uppercase;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 40px;
+  padding: 47px 35px 6px;
 }
 
 .modal--bug .modal__content {
-  padding-top: 29px;
   padding-right: 42px;
-  padding-bottom: 30px;
   padding-left: 42px;
 }
 
-.modal__header h2 {
-  text-align: center;
-  text-transform: uppercase;
+.modal__content h2 {
   font-weight: bold;
   font-size: 18px;
 }
@@ -70,17 +37,20 @@
   background-color: #f2f2f2;
   width: 100%;
   text-align: center;
+  padding: 20px;
 }
 
-.modal--feedback .modal__footer-btn {
-  width: 280px;
-  margin: 20px;
+.modal--bug .modal__footer {
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
-.modal--bug .modal__footer-btn {
-  width: 180px;
-  margin-right: 70px;
-  margin-left: 70px;
+.modal__footer-btn {
+  width: 100%;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
 }
 
 @media (min-width: @tablet-width) {
@@ -93,41 +63,44 @@
     height: 347px;
   }
 
-  .modal--bug  .modal__header {
-    padding-left: 43px;
-    padding-right: 43px;
-  }
-
-  .modal__header h2 {
+  .modal__content h2 {
     font-size: 30px;
     line-height: 40px;
   }
 
+  .modal--bug h2 {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
   .modal--feedback .modal__content {
-    padding-top: 54px;
-    padding-right: 93px;
-    padding-bottom: 40px;
-    padding-left: 93px;
+    padding: 54px 93px 10px;
   }
 
   .modal--bug .modal__content {
-    padding-top: 29px;
+    padding-top: 49px;
     padding-right: 42px;
-    padding-bottom: 30px;
+    padding-bottom: 14px;
     padding-left: 42px;
   }
 
-  .modal--feedback .modal__footer-btn {
-    width: 458px;
-    margin: 44px;
+  .modal--feedback .modal__footer {
+    padding: 39px 90px;
   }
 
-  .modal--bug .modal__footer-btn {
-    width: 180px;
-    padding-left: 127px;
-    padding-right: 147px;
-    margin-right: 63px;
-    margin-left: 63px;
+  .modal--bug .modal__footer {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+
+  .modal__footer-btn {
+    width: 100%;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+    padding-left: 21px;
+    padding-top: 21px;
+    padding-right: 21px;
+    padding-bottom: 21px;
   }
 }
-*/
