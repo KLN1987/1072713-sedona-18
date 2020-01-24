@@ -15,6 +15,7 @@
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
+  width: 100%;
 }
 
 .video__header::before {
@@ -166,7 +167,8 @@
   .video__display {
     width: 100%;
     position: relative;
-    margin-top: -10px;
+    margin-top: 11px;
+    margin-bottom: -20px;
   }
 
   .video__player {
@@ -178,7 +180,7 @@
 
   .video__show {
     position: absolute;
-    bottom: 0;
+    bottom: 21px;
     left: 0;
     width: 100%;
   }
@@ -187,7 +189,7 @@
     width: 648px;
     height: 499px;
     position: absolute;
-    top: 20px;
+    top: 0;
     left: 0;
   }
 
@@ -268,6 +270,11 @@
     margin-bottom: 105px;
   }
 
+  .video__display {
+    margin-top: -11px;
+    margin-bottom: 0;
+  }
+
   .video__progress {
     width: 540px;
     bottom: 23px;
@@ -298,5 +305,9 @@
     position: absolute;
     top: 0;
     left: 0;
+  }
+
+  .video__show {
+    bottom: 0;
   }
 }

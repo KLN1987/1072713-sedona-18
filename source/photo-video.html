@@ -5,18 +5,16 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="css/style.css" rel="stylesheet">
-  <script>
-    document.createElement("picture");
-  </script>
-  <script src="js/picturefill.min.js" async></script>
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin="">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
 
   <div class="container">
     <header class="page-header">
-      <nav class="main-nav main-nav--opened main-nav--nojs">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__btn"><span class="visually-hidden">Меню</span>
         </button>
         <div class="main-nav__wrapper site-list">
@@ -222,18 +220,18 @@
               <div class="video__contorls">
                 <button type="button" class="video__start"><span class="visually-hidden">В начало</span>
                   <svg class="video__start-btn" width="16" height="20">
-                    <use xlink:href="img/sprite.svg#video-replay"></use>
+                    <use xlink:href="img/sprite.svg#icon-video-replay"></use>
                   </svg>
                 </button>
                 <button type="button" class="video__titers"><span class="visually-hidden">Титры</span>
                   <svg class="video__titers-btn" width="32" height="20">
-                    <use xlink:href="img/sprite.svg#video-subtitles"></use>
+                    <use xlink:href="img/sprite.svg#icon-video-subtitles"></use>
                   </svg>
                 </button>
                 <button type="button" class="video__full-screen"><span class="visually-hidden">Полный
                     экран</span>
                   <svg class="video__full-screen-btn" width="20" height="20">
-                    <use xlink:href="img/sprite.svg#video-fullscreen"></use>
+                    <use xlink:href="img/sprite.svg#icon-video-fullscreen"></use>
                   </svg>
                 </button>
               </div>
@@ -269,7 +267,7 @@
           <p class="copyright__text">Разработано</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
             <svg class="copyright__logo" width="27" height="34">
-              <use xlink:href="img/sprite.svg#academy-logo"></use>
+              <use xlink:href="img/sprite.svg#htmlacademy"></use>
             </svg>
           </a>
         </div>
@@ -277,7 +275,13 @@
     </footer>
   </div>
 
-  <script src="js/main-nav.js"></script>
+  <script>
+    document.createElement("picture");
+  </script>
+  <script src="js/picturefill.min.js" defer=""></script>
+  <script src="js/svg4everybody.min.js"></script>
+  <script>svg4everybody();</script>
+  <script src="js/main-nav.min.js"></script>
 
 </body>
 
