@@ -14,6 +14,7 @@ var include = require("posthtml-include");
 var autoprefixer = require("autoprefixer");
 var csso = require("gulp-csso");
 var del = require("del");
+var uglify = require("gulp-uglify");
 var server = require("browser-sync").create();
 
 gulp.task("clean", function () {
@@ -80,6 +81,13 @@ gulp.task("html", function () {
     .pipe(gulp.dest("build"));
 });
 
+gulp.task("js", function () {
+  return gulp.src("source/js/**/*.js")
+    .pipe(uglify())
+    .pipe(rename("**.min.js"))
+    .pipe(gulp.dest("build/js"))
+});
+
 gulp.task("server", function () {
   server.init({
     server: "build/"
@@ -94,5 +102,5 @@ gulp.task("refresh", function (done) {
   done();
 });
 
-gulp.task("build", gulp.series("clean", "copy", "images", "webp", "css", "sprite", "html"));
+gulp.task("build", gulp.series("clean", "copy", "images", "webp", "css", "sprite", "js", "html"));
 gulp.task("start", gulp.series("build", "server"));
