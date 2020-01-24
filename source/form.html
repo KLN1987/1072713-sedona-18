@@ -178,33 +178,27 @@
     </footer>
 
     <section>
-      <div class="modal modal-feedback">
-        <div class="modal__content modal-feedback__content">
-          <div class="modal__content-header modal-feedback__content-header">
-            <h2>Ваш отзыв отправлен!</h2>
-          </div>
-          <div class="modal__content-text modal-feedback__content-text">
-            Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
-          </div>
-        </div>
-        <div class="modal__content-btn modal-feedback__content-btn">
-          <button class="button modal__content-closed modal-feedback__content-closed">Закрыть окно</button>
+      <div class="modal modal--feedback modal--show">
+        <h2>Ваш отзыв отправлен!</h2>
+        <p>Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+        <div class="modal__footer">
+          <button class="button modal__footer-btn">Закрыть окно</button>
         </div>
       </div>
     </section>
 
     <section>
-      <div class="modal modal-bug">
-        <div class="modal__content modal-bug__content">
-          <div class="modal__content-header modal-bug__content-header">
+      <div class="modal--bug modal--show">
+        <div class="modal__content">
+          <div class="modal__header">
             <h2>Что-то пошло не так!</h2>
           </div>
-          <div class="modal__content-text modal-bug__content-text">
+          <div class="modal__text">
             Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
           </div>
         </div>
-        <div class="modal__content-btn modal-bug__content-btn">
-          <button class="button modal__content-closed modal-bug__content-closed">Ок</button>
+        <div class="modal__footer">
+          <button class="button modal__footer-btn">Ок</button>
         </div>
       </div>
     </section>

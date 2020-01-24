@@ -1,6 +1,5 @@
-.modal-feedback,
-.modal-bug {
-  display: none;
+.modal {
+  display: block;
   position: fixed;
   max-width: 320px;
   height: 323px;
@@ -10,15 +9,40 @@
   z-index: 5;
   left: 0;
   right: 0;
-  top: 0%;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 49px 20px 33px 20px;
 }
 
-.modal-bug {
+.modal h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.modal p {
+  margin-bottom: 40px;
+}
+
+.modal__footer {
+  background-color: #f2f2f2;
+  width: 100%;
+  padding: 0;
+}
+
+.modal__footer-btn {
+  width: 100%;
+  padding: 22px 23px;
+  margin: 0;
+}
+
+/*
+.modal--bug {
   height: 280px;
+  display: block;
 }
 
-.modal-feedback__content,
-.modal-bug__content {
+.modal__content {
   margin: 0 auto;
   padding-top: 49px;
   text-align: center;
@@ -28,81 +52,77 @@
   padding-bottom: 40px;
 }
 
-.modal-bug__content {
+.modal--bug .modal__content {
   padding-top: 29px;
   padding-right: 42px;
   padding-bottom: 30px;
   padding-left: 42px;
 }
 
-.modal-feedback__content-header h2 {
+.modal__header h2 {
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 18px;
 }
 
-.modal-feedback__content-btn {
+.modal--feedback .modal__footer {
   background-color: #f2f2f2;
   width: 100%;
   text-align: center;
 }
 
-.modal-feedback__content-closed {
+.modal--feedback .modal__footer-btn {
   width: 280px;
   margin: 20px;
 }
 
-.modal-bug__content-closed {
+.modal--bug .modal__footer-btn {
   width: 180px;
   margin-right: 70px;
   margin-left: 70px;
 }
 
 @media (min-width: @tablet-width) {
-  .modal-feedback {
+  .modal--feedback {
     max-width: 604px;
   }
 
-  .modal-bug {
+  .modal--bug {
     max-width: 400px;
     height: 347px;
   }
 
-  .modal-bug__content-header {
+  .modal--bug  .modal__header {
     padding-left: 43px;
     padding-right: 43px;
   }
 
-  .modal-feedback__content-header h2 {
-    font-size: 30px;
-  }
-
-  .modal-bug__content-header h2 {
+  .modal__header h2 {
     font-size: 30px;
     line-height: 40px;
   }
 
-  .modal-feedback__content {
+  .modal--feedback .modal__content {
     padding-top: 54px;
     padding-right: 93px;
     padding-bottom: 40px;
     padding-left: 93px;
   }
 
-  .modal-bug__content {
+  .modal--bug .modal__content {
     padding-top: 29px;
     padding-right: 42px;
     padding-bottom: 30px;
     padding-left: 42px;
   }
 
-  .modal-feedback__content-closed {
+  .modal--feedback .modal__footer-btn {
     width: 458px;
     margin: 44px;
   }
 
-  .modal-bug__content-closed {
+  .modal--bug .modal__footer-btn {
     width: 180px;
     padding-left: 127px;
     padding-right: 147px;
@@ -110,3 +130,4 @@
     margin-left: 63px;
   }
 }
+*/
