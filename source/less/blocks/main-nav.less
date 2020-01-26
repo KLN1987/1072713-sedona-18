@@ -24,6 +24,7 @@
     background-color: @bc-main;
     border: none;
     z-index: 2;
+    outline: none;
   }
 
   .main-nav--closed .main-nav__btn::before {
@@ -46,10 +47,6 @@
     background-color: #ffffff;
   }
 
-  .main-nav--nojs .main-nav__btn {
-    display: none;
-  }
-
   .main-nav--opened .main-nav__wrapper {
     width: 320px;
   }
@@ -68,6 +65,7 @@
     height: 22px;
     background-color: @bc-main;
     border: none;
+    outline: none;
   }
 
   .main-nav--opened .main-nav__btn::before {
@@ -90,6 +88,19 @@
     height: 4px;
     background-color: #ffffff;
     transform: rotate(-45deg);
+  }
+
+  .main-nav--nojs .main-nav__btn {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__wrapper {
+    position: static;
+    min-height: 0;
+  }
+
+  .main-nav--nojs .site-list__item {
+    display: block;
   }
 }
 
